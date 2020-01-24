@@ -1,6 +1,6 @@
 ---
 id: 1
-layout: "_layouts/default.twig"
+layout: "_layouts/blog.twig"
 title: "How to install xampp on windows"
 relativeUrl: "how-to-install-xampp"
 category: "web"

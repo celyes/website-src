@@ -1,19 +1,87 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
-        <title>Welcome to my blog </title>   
-    </head>
-    <body>
-        {% include "_layouts/navbar.twig" %}
-        <div class="container py-5 px-2">
-            {% for post in posts %}
-                <img src="{{site_url}}/img/{{post.img}}" class="img-fluid" />
-                <h3><a href="{{site_url}}/{{post.relativeUrl}}">{{post.title}}</a></h3>   
-                <small class="text-danger">{{post.category}}</small>   
-            {% endfor %}
-        </div>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    </body>
-</html>
+---
+layout: "_layouts/default.twig"
+projects:
+    -
+        title: SoftVenue
+        link: https://softvenue.net
+        description: SoftVenue company website
+        type: PHP
+        class: php
+    -
+        title: i18n
+        link: https://i18n.softvenue.net/
+        description: Open source technical terms glossary - English / Arabic
+        type: JavaScript
+        class: js
+    -
+        title: MaterialCV
+        link: /projects/MaterialCV/
+        description: Material Design CV Template
+        type: Materialize CSS
+        class: materialize
+    -
+        title: Learn Git
+        link: https://learn-git.ga
+        description: Learn Git and Git remotes in Arabic (in Progress)
+        type: JavaScript
+        class: js
+    -
+        title: Node Static Server
+        link: https://github.com/celyes/Node-static-server
+        description: a really simple Node.js static files server (not for production).
+        type: Node.js
+        class: nodejs
+    -
+        title: Sarahah
+        link: http://github.com/celyes/saraha
+        description: Sarahah website clone
+        type: Laravel
+        class: laravel
+    -
+        title: Persona theme
+        link: /projects/persona/
+        description: Simple material design theme (for practice)
+        type: HTML
+        class: html
+    -
+        title: Simple store theme
+        link: /projects/simple-store/
+        description: Simple e-commerce theme
+        type: HTML
+        class: html
+    -
+        title: Galaxy theme
+        link: /projects/galaxy/
+        description: Creative agency static template (for practice)
+        type: jQuery
+        class: jquery
+    -
+        title: Materialized Login Form
+        link: /projects/login/
+        description: Simple, yet elegant material design login form 
+        type: Materialize CSS
+        class: materialize
+    -
+        title: More works...
+        link: https://github.com/celyes?tab=repositories
+        description: See other works at GitHub
+        type: GitHub
+        class: 
+---
+{% block content %}
+
+    <div class="container py-5 px-2">
+    {% include '_layouts/intro.twig' %}
+    <br>
+    <hr>
+    <br>
+    {% include '_layouts/skills.twig' %}
+    <br>
+    <hr>
+    <br>
+    {% include '_layouts/projects.twig' %}
+    </div>
+    <br>
+    <br>
+    <p class="my-5 text-center text-muted" id="date">&copy; </p>
+{% endblock %}
