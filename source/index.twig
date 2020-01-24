@@ -8,13 +8,11 @@
     <body>
         {% include "_layouts/navbar.twig" %}
         <div class="container py-5 px-2">
-            {% block content %}
-                {% for post in posts %}
-                    <a href="/{{ post.relativeUrl }}/">
-                        <h3>{{ post.title }}</h3>
-                    </a>
-                {% endfor %}
-            {% endblock %}
+            {% for post in posts %}
+                <img src="{{site_url}}/img/{{post.img}}" class="img-fluid" />
+                <h3><a href="{{post.relativeUrl}}">{{post.title}}</a></h3>   
+                <small class="text-danger">{{post.category}}</small>   
+            {% endfor %}
         </div>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     </body>

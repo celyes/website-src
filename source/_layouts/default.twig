@@ -3,13 +3,22 @@
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
-        <title>{{ post.title }}</title>   
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/styles/gruvbox-dark.min.css" />
+        <link rel="stylesheet" href="http://localhost/blog/output/assets/css/main.css" />
+        
+        <title>{{ title }}</title>  
+    
     </head>
     <body>
         {% include "_layouts/navbar.twig" %}
         <div class="container py-5 px-2">
-            {% block content %}{% endblock %}
+            {% block content %}
+            
+            {% endblock %}
         </div>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/languages/php.min.js"></script>
+        <script src="http://localhost/blog/output/assets/js/main.js"></script>
     </body>
 </html>
