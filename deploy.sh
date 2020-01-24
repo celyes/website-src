@@ -1,4 +1,5 @@
 set -e
 
-git add output && git commit -m "Deploy"
-git subtree push --prefix dist origin gh-pages
+git add . && git commit -m "Deploy"
+git push -f origin dev
+git subtree push --prefix output origin gh-pages
