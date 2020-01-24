@@ -10,7 +10,7 @@
         <div class="container py-5 px-2">
             {% for post in posts %}
                 <img src="{{site_url}}/img/{{post.img}}" class="img-fluid" />
-                <h3><a href="{{post.relativeUrl}}">{{post.title}}</a></h3>   
+                <h3><a href="{{site_url}}/{{post.relativeUrl}}">{{post.title}}</a></h3>   
                 <small class="text-danger">{{post.category}}</small>   
             {% endfor %}
         </div>
