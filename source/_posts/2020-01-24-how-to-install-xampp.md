@@ -1,5 +1,5 @@
 ---
-id: 1
+id: 2
 layout: "_layouts/blog.twig"
 title: "How to install xampp on windows"
 relativeUrl: "how-to-install-xampp"
