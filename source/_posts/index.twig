@@ -1,18 +1,20 @@
 ---
 id: 1
 layout: "_layouts/blog.twig"
-title: "How to install xampp on windows"
-relativeUrl: "how-to-install-xampp"
-category: "web"
+title: "Celyes' Web blog - browse all articles"
+relativeUrl: "index"
+category: "index"
 img: "#"
 ---
 {% for post in posts %}
+    {% if (post.id != 1) %} 
     <div class="col-md-4 col-sm-6 col-xs-12">
         <div class="project-card">
-            <a target="_blank" rel="noopener" href="{{post.relativeUrl}}" class="title">{{post.title}}</a>
+            <a rel="noopener" href="{{site_url}}/{{post.relativeUrl}}" class="title">{{post.title}}</a>
             <small>{{post.category}}</small>  
-            <img src="{{site_url}}/{{post.img}}"> 
+            <!--<img src="{{site_url}}img/{{post.img}}"> -->
         </div>
     </div>
-    {% endfor %}
+    {% endif %}
+{% endfor %}
 </div>
