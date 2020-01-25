@@ -1,3 +1,4 @@
 # statie.yml
 parameters:
-    site_url: http://celyes.github.io/
+    site_url: https://celyes.github.io
+    title: Ilyes Chouia - PHP Developer & Enthusiast

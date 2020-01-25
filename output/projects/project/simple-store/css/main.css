@@ -1,0 +1,303 @@
+/* Styling for default element */
+body{
+    background-color:#eee !important;
+    font-family: tahoma, helvetica, sans-serif !important;
+}
+a{
+    color:#9DA460 !important;
+    text-decoration: underline !important;
+    font-size: 12px;
+}
+a:hover{
+    color:#000 !important;
+}
+del {
+    color: #C29358;
+}
+/*
+    Navigation
+    Styling for small type objects
+*/
+.link-font{
+    font-size: 0.8em;
+    padding-top:2px;
+}
+.light-text{
+    color:#ccc;
+}
+.navigation-row{
+    height:30px;
+    padding:0 15px;
+    line-height:30px;
+    margin-bottom: 4px;
+}
+.navigation-top{
+    display: block;
+    position: absolute;
+    float: right !important;
+    right:-5px !important;
+}
+.navigation-top li{
+    list-style-type:none;
+    display: inline-block;
+}
+.navigation-top li a{
+    padding-right:3px;
+}
+.navigation-top li input{
+    height:32px;
+    position: relative;
+    border:none;
+    padding:0 5px;
+    font-size:12px;
+    top:1px;
+}
+.navigation-top li input:focus{
+    outline: none;
+}
+.searchBtn {
+    border:1px solid #fff;
+    padding: 0 2px;
+    position: relative;
+    background: #fff;
+    top:2px;
+    left:-5px;
+    cursor: pointer;
+}
+.searchBtn img{
+    position: relative;
+    top:-2px;
+    right:2px;
+}
+/*
+    content
+*/
+.content{
+    background: #fff;
+    padding:7px 7px 15px 7px;
+}
+/* main navbar */
+.main-nav{
+    margin: 2px !important;
+    padding:5px 0;
+    border-bottom:1px solid #eee;
+}
+.navigation-main{
+    position: absolute;
+    right:0;
+    margin:0 10px;
+}
+.navigation-main li{
+    display: inline-block;
+}
+.navigation-main li a{
+    font-family: "Trebuchet MS",tahoma,helvetica,sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none !important;
+    color:#333 !important;
+    line-height: 35px;
+    margin-right:10px;
+}
+.cart-link{
+    padding-left:27px;
+    background: url("../asset/minicartBg.jpg") no-repeat left;
+}
+/* Carousel */
+.carousel-container{
+    padding:5px 0 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+.carousel a span{
+    color:#000 !important;
+}
+.carousel-control-prev-icon{
+    position:absolute;
+    bottom:15px;
+    left:10px;
+    background-image:none !important;
+}
+.carousel-control-next-icon{
+    position:absolute;
+    bottom:15px;
+    right:20px;
+    background-image:none !important;
+}
+.carousel-indicators .active {
+    background-color:#333 !important;
+}
+.carousel-indicators li {
+    background-color:#9DA460 !important;
+    width:10px !important;
+    height:10px !important;
+    border-radius: 100%;
+}
+/* products */
+.products-container{
+    text-align: center;
+    padding:5px 0;
+}
+.product{
+    position: relative;
+    display: inline-block;
+    width: 220px;
+    margin:3px auto;
+}
+.product img{
+    height:130px;
+    width: 220px;
+    border-bottom:1px solid #ccc;
+    transition: 0.2s all;
+}
+.product img:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+.caption{
+    background:linear-gradient(to top, #eee, #fff,#fff, #fff, #fff);
+    border:1px solid #ddd;
+    border-top: none;
+    border-bottom:1px solid #ccc;
+    text-align:left;
+    padding:2px 5px;
+}
+.product-title{
+    color:#222 !important;
+    text-decoration: none !important;
+    font-size: 13px;
+    line-height:14px;
+    font-family: "Trebuchet MS",tahoma,helvetica,sans-serif;
+    font-weight: bold;
+}
+.product-title:hover{
+    color:#9DA460 !important;
+}
+.product-price{
+    position: relative;
+    font-size:12px;
+    font-weight:bold;
+    font-family: "Trebuchet MS", tahoma, Helvetica, sans-serif;
+    line-height: normal;
+    color: #9DA460;
+    top:-3px;
+}
+/*
+    Footer
+*/
+.footer-container{
+    border-top:1px solid #ddd;
+    padding-top:10px;
+}
+.footer-title{
+    font-size: 15px;
+    color: #333;
+    font-family: "Trebuchet MS",tahome,helvetica,sans-serif;
+    font-weight: bold;
+}
+.footer-container ul{
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 10px;
+}
+.footer-container ul li{
+    background: url("../asset/bullet.jpg") no-repeat left;
+    padding-left: 18px;
+    font-size: 12px;
+    line-height:1.6em;
+}
+.footer-container ul li a{
+    color:#333 !important;
+    text-decoration: none !important;
+}
+.footer-container ul li a:hover{
+    color: #9da460 !important;
+}
+.company-define,
+.information,
+.my-account,
+.customer-service{
+    height:150px;
+    position: relative;
+    display: table-cell;
+}
+.company-define{
+    width: 35%;
+    padding-right: 20px;
+}
+.company-define p{
+    font-size: 0.8em;
+    line-height: 1.6em;
+    color:#333;
+    margin-top:5px;
+}
+
+.information,
+.my-account{
+    width:20%;
+}
+.information,
+.my-account,
+.customer-service{
+    border-left: 1px solid #ddd;
+    padding: 0 15px;
+}
+.information ul li,
+.my-account ul li,
+.customer-service ul li{
+    list-style-type: none;
+}
+.copyright{
+    height:30px;
+    line-height: 30px;
+}
+.copyright p{
+    margin-bottom: 0.2rem;
+}
+.copy{
+
+    font-size: 12px;
+    float: left;
+    width: auto;
+}
+.designer{
+    font-size: 12px;
+    float: right;
+    width: auto;
+}
+@media(max-width:992px){
+    .navigation-top{
+        display: none !important;
+    }
+
+    .carousel-indicators li {
+        display: none;
+    }
+
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon{
+        bottom:0;
+    }
+    .carousel-control-next-icon{
+        right:7px;
+    }
+    .carousel-control-prev-icon{
+        left:2px;
+    }
+}
+
+@media (max-width:768px) {
+    .company-define,
+    .information,
+    .my-account,
+    .customer-service{
+        width: 100%;
+        display: block;
+        min-height:150px;
+        height:auto;
+        border: none ;
+    }
+}

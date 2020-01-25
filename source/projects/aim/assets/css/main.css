@@ -1,0 +1,32 @@
+body{
+    font-family: 'Work Sans', sans-serif;
+    text-transform: uppercase;
+}
+.__hero-text{
+    font-size: 140px;
+    font-weight: bolder;
+    line-height: 120px;
+    background: linear-gradient(120deg, rgb(5, 0, 97) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    background-clip:text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.2s ease-out;
+}
+.__situation{
+    font-size: 21px;
+    line-height: 1.4;
+    margin: 0 0 1.5em;
+    color: #8F92B3;
+}
+.fab{
+    color: #fff;
+    font-size: 20px;
+    text-shadow: 1px 0 0 #1f2667, -1px 0 0 #1f2667, 0 1px 0 #1f2667, 0 -1px 0 #1f2667, 1px 1px #1f2667, -1px -1px 0 #1f2667, 1px -1px 0 #1f2667, -1px 1px 0 #1f2667;
+    padding-right: 10px;
+}
+@media(max-width: 768px){
+    .__hero-text{
+        font-size: 60px;
+        line-height: 60px;
+    }
+}
