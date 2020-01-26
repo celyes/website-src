@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700&display=swap');
+body{
+
+
+    font-family: 'Source Sans Pro', sans-serif;
+
+
+}
+.parallax-container {
+    height: 90vh;
+}
+.parallax-container .parallax img{
+    max-height: 150%;
+}
+.parallax-navbar{
+    background: linear-gradient(to bottom, rgba(0,0,0,0.6), transparent);
+}
+.parallax-navbar .container{
+    width: 80%;
+    height: 100%;
+}
+.headline-text{
+    font-size: 4vw;
+    font-weight: 700;
+}
+.category-chip{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
+nav .brand-logo{
+    font-size: 20px;
+    font-weight: 300;
+}
+.container-tight{
+    width: 60% !important;
+}
+.container-tight p{
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 3rem;
+    text-align: justify;
+}
