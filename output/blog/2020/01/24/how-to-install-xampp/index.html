@@ -1,43 +1,121 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- meta -->
+        <meta charset="UTF-8">      
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta name="description" content="Ilyes Chouia - full stack web developer and translator, PHP enthusiast and guru">
         <meta name="keywords" content="developer,web,PHP,translation,nodejs,translator">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+        
+        <!-- links -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">        
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/styles/gruvbox-dark.min.css" />
-        <link rel="stylesheet" href="https://celyes.github.io/assets/css/main.css" />
+        <link rel="stylesheet" href="https://celyes.github.io/assets/blog/css/main.css" />
+        
         <title>How to install xampp on windows</title>  
     
     </head>
     <body>
-            <div class="container">
-            <h1>How to install XAMPP on Windows ?</h1>
-<p>in this article, we will be talking about how to install xampp on Windows...</p>
-<pre><code class="language-php">namespace Celyes\DLogger;
+    
+                <div class="parallax-container">
+            <nav class="z-depth-0 parallax-navbar">
+                <div class="container">
+                    <div class="nav-wrapper">
+                        <a href="#" class="brand-logo">Ilyes Chouia</a>
+                        <ul id="nav-mobile" class="right hide-on-med-and-down">
+                            <li><a href="web">Web</a></li>
+                            <li><a href="#">Components</a></li>
+                            <li><a href="#">JavaScript</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="parallax">
+                <img src="https://celyes.github.io/img/2020-01-26-deploying-laravel-to-linux-shared-hosting.webp" />
+            </div>
+            <div class="container ">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h1 class="white-text headline-text">How to install xampp on windows</h1>
+                <div class="chip category-chip">
+                    web
+                </div>
+            </div>
+        </div>
+                <div class="container container-tight">
+        <br>
+        <p>in this article, we will be talking about how to install xampp on Windows...</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+<pre><code class="language-php">&lt;?php
+namespace GuzzleHttp\Exception;
 
-class Log extends BaseClass implements Base {
+use Psr\Http\Message\StreamInterface;
 
-    protected $file;
+/**
+ * Exception thrown when a seek fails on a stream.
+ */
+class SeekException extends \RuntimeException implements GuzzleException
+{
+    private $stream;
 
-    /**
-    * @return void
-    * @param resource file
-    */
-    public function __construct($file = "log.txt")
+    public function __construct(StreamInterface $stream, $pos = 0, $msg = '')
     {
-        $this-&gt;file = $file;
+        $this-&gt;stream = $stream;
+        $msg = $msg ?: 'Could not seek the stream to position ' . $pos;
+        parent::__construct($msg);
     }
 
-}
-</code></pre>            </div>  
-        </div>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    /**
+     * @return StreamInterface
+     */
+    public function getStream()
+    {
+        return $this-&gt;stream;
+    }
+}</code></pre>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>        </div>
+
+        <!-- footer -->
+        <br>
+        <footer class="page-footer grey lighten-4">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="black-text">Footer Content</h5>
+                <p class="black-text">You can use rows and columns here to organize your footer content.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="black-text" href="#!">Link 1</a></li>
+                  <li><a class="black-text" href="#!">Link 2</a></li>
+                  <li><a class="black-text" href="#!">Link 3</a></li>
+                  <li><a class="black-text" href="#!">Link 4</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container black-text">
+            © 2020 Copyright Text
+            <a class="black-text right" href="#!">More Links</a>
+            </div>
+          </div>
+        </footer>
+
+        <!-- scripts -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>        
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/highlight.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/languages/php.min.js"></script>
-        <script src="https://celyes.github.io/assets/js/main.js"></script>
+        <script src="https://celyes.github.io/assets/blog/js/main.js"></script>
 
     </body>
 </html>
