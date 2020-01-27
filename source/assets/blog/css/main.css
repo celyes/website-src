@@ -50,3 +50,13 @@ nav .brand-logo{
         font-size: 24px;
     }
 }
+.text-muted{
+    color: #ececec;
+}
+code {
+    border: 1px solid#ccc;
+    background-color:#f9f9f9;
+}
+.page-footer ul li, .page-footer p{
+    line-height: 2rem;
+}

@@ -4,7 +4,7 @@ layout: "_layouts/blog.twig"
 title: "How to install xampp on windows"
 relativeUrl: "how-to-install-xampp"
 category: "web"
-img: "2020-01-26-deploying-laravel-to-linux-shared-hosting.webp"
+img: "2020-01-24-how-to-install-xampp.jpg"
 ---
 
 in this article, we will be talking about how to install xampp on Windows...
