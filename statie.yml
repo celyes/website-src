@@ -3,3 +3,5 @@ parameters:
     site_url: https://celyes.github.io
     title: Ilyes Chouia - PHP Developer & Enthusiast
     site_moto: Ilyes Chouia
+    socials:
+        github: "https://github.com/celyes"
