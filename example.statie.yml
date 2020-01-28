@@ -1,0 +1,8 @@
+# example.statie.yml
+parameters:
+    site_url: WEBSITE_URL
+    title: WEBSITE_TITLE
+    author: WEBSITE_AUTHOR | WEBSITE_OWNER
+    site_moto: WEBSITE_MOTTO
+    socials:
+        github: GITHUB_LINK

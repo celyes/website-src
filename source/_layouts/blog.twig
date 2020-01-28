@@ -1,92 +1,38 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <!-- meta -->
-        <meta charset="UTF-8">      
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <meta name="description" content="Ilyes Chouia - full stack web developer and translator, PHP enthusiast and guru">
-        <meta name="keywords" content="developer,web,PHP,translation,nodejs,translator">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        
-        <!-- links -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">        
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/styles/gruvbox-dark.min.css" />
-        <link rel="stylesheet" href="{{site_url}}/assets/blog/css/main.css" />
-        
-        <title>{{ title }}</title>  
-    
-    </head>
+    {% include '_snippets/head.twig' %}
     <body>
     
         {% if (post.id != 1) %}
-        <div class="parallax-container">
-            <nav class="z-depth-0 parallax-navbar">
-                <div class="container">
-                    <div class="nav-wrapper">
-                        <a href="{{site_url}}/blog" class="brand-logo">{{site_moto}}</a>
-                        <ul id="nav-mobile" class="right hide-on-med-and-down">
-                            <li><a href="web">Web</a></li>
-                            <li><a href="#">Components</a></li>
-                            <li><a href="#">JavaScript</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <div class="parallax">
-                <img src="{{site_url}}/img/{{post.img}}" />
-            </div>
-            <div class="container ">
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <h1 class="white-text center headline-text">{{post.title}}</h1>
-                <div class="chip category-chip">
-                    {{post.category}}
-                </div>
-            </div>
-        </div>
+        {% include '_snippets/parallax.twig' %}
         {% endif %}
         <div class="container container-tight">
-        <br>
-        {% block content %}{% endblock %}
+          <div class="col-12">
+            <br>
+            {% if (post.id != 1) %}
+            {% include '_snippets/postinfo.twig' %}
+            {% endif %}
+
+            {% block content %}{% endblock %}
+            
+            <br>
+            <br>
+            {% if (post.id != 1) %}
+            {% include '_snippets/disqus.twig' %}
+            {% endif %}
+          </div>
         </div>
 
         <!-- footer -->
         <br>
-        <footer class="page-footer grey lighten-4">
-          <div class="container">
-            <div class="row">
-              <div class="col l6 s12">
-                <h5 class="black-text">Footer Content</h5>
-                <p class="black-text">You can use rows and columns here to organize your footer content.</p>
-              </div>
-              <div class="col l4 offset-l2 s12">
-                <h5 class="black-text">Links</h5>
-                <ul>
-                  <li><a class="black-text" href="#!">Link 1</a></li>
-                  <li><a class="black-text" href="#!">Link 2</a></li>
-                  <li><a class="black-text" href="#!">Link 3</a></li>
-                  <li><a class="black-text" href="#!">Link 4</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="footer-copyright">
-            <div class="container black-text">
-            © 2020 Copyright Text
-            <a class="black-text right" href="#!">More Links</a>
-            </div>
-          </div>
-        </footer>
+        <br>
+        <br>
+        <br>
+        
+        {% include '_snippets/footer.twig' %}
 
         <!-- scripts -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/highlight.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/languages/php.min.js"></script>
-        <script src="{{site_url}}/assets/blog/js/main.js"></script>
+        {% include '_snippets/scripts.twig' %}
 
     </body>
 </html>

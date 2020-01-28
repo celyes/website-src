@@ -4,3 +4,5 @@ output/
 
 deploy.sh
 localdeploy.sh
+
+statie.yml
