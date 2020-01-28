@@ -1,21 +1,16 @@
 <div class="parallax-container">
           
-            {% include '_snippets/navbar.twig' %}
-          
-            <div class="parallax">
-                <img src="{{site_url}}/img/{{post.img}}" />
-            </div>
-            <div class="container blog-hero-container">
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <h1 class="white-text center headline-text">{{post.title}}</h1>
-                <div class="category-chips">
-                  {% for category in post.categories %}
-                  <div class="chip">{{ category }}</div>
-                  {% endfor %}
-                </div>
-            </div>
-        </div>
+    {% include '_snippets/navbar.twig' %}
+    
+    <div class="parallax">
+        <img src="{{site_url}}/img/{{post.img}}" />
+    </div>
+    <div class="vertical-center">
+        <h1 class="white-text center headline-text">{{post.title}}</h1>
+    </div>
+    <div class="category-chips">
+        {% for category in post.categories %}
+        <div class="chip">{{ category }}</div>
+        {% endfor %}
+    </div>
+</div>
