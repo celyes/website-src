@@ -5,6 +5,12 @@ body{
 .parallax-container {
     height: 90vh;
     background: rgba(0,0,0,0.4);
+<<<<<<< HEAD
+=======
+}
+.parallax-container .parallax img{
+    max-height: 170%;
+>>>>>>> bc7259dbdd7cd8d2655dc7b2af7288edcbec1248
 }
 .parallax-navbar{
     background: linear-gradient(to bottom, rgba(0,0,0,0.6), transparent);
@@ -34,6 +40,12 @@ body{
     width: 80%;
     margin: auto;
 }
+<<<<<<< HEAD
+=======
+.bog-hero-container{
+    height: calc(100% - 64px);
+}
+>>>>>>> bc7259dbdd7cd8d2655dc7b2af7288edcbec1248
 .category-chips{
     position: absolute;
     left: 10px;
