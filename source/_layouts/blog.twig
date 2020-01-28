@@ -4,43 +4,20 @@
     <body>
     
         {% if (post.id != 1) %}
-        <div class="parallax-container">
-          
-            {% include '_snippets/navbar.twig' %}
-          
-            <div class="parallax">
-                <img src="{{site_url}}/img/{{post.img}}" />
-            </div>
-            <div class="container ">
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <h1 class="white-text center headline-text">{{post.title}}</h1>
-                <div class="chip category-chip">
-                    {{post.category}}
-                </div>
-            </div>
-        </div>
+        {% include '_snippets/parallax.twig' %}
         {% endif %}
         <div class="container container-tight">
           <div class="col-12">
             <br>
-            <br>
             {% if (post.id != 1) %}
-            By: Ilyes Chouia
-            <span class="p-relative right">
-              <span class="fas fa-comment text-muted"></span>
-              &nbsp;<a href="#disqus_thread">Post a comment</a>
-            </span>  
+            {% include '_snippets/postinfo.twig' %}
             {% endif %}
 
             {% block content %}{% endblock %}
             
+            <br>
+            <br>
             {% if (post.id != 1) %}
-            <br>
-            <br>
             {% include '_snippets/disqus.twig' %}
             {% endif %}
           </div>
