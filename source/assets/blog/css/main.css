@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700&display=swap');
 body{
     font-family: 'Source Sans Pro', 'Segoe UI', Ubuntu, Arial, sans-serif;
 }
@@ -47,7 +47,7 @@ body{
 }
 nav .brand-logo{
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 400;
 }
 .container-tight{
     width: 60% !important;
@@ -63,14 +63,6 @@ nav .brand-logo{
     border: 1px solid #fff;
     background-color: transparent;
 }
-@media(max-width: 768px){
-    .container-tight{
-        width: 90% !important;
-    }
-    .headline-text{
-        font-size: 36px;
-    }
-}
 .material-icons{
     position: relative;
     top: 2px;
@@ -78,10 +70,27 @@ nav .brand-logo{
 .comments-counter{
     position: relative;
 }
+.article-card{
+    padding: 15px 0;
+}
+.article-card .article-card-title{
+    font-weight: 200 !important;
+    line-height: 1.8em;
+}
 code {
     border: 1px solid#ccc;
     background-color:#f9f9f9;
 }
 .page-footer ul li, .page-footer p{
     line-height: 2rem;
+}
+
+
+@media(max-width: 768px){
+    .container-tight{
+        width: 90% !important;
+    }
+    .headline-text{
+        font-size: 36px;
+    }
 }

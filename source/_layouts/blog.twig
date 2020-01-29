@@ -11,6 +11,11 @@
             <br>
             {% if (post.id >= 10) %}
             {% include '_snippets/postinfo.twig' %}
+            {% include '_snippets/commentsCounter.twig' %}
+            
+            <br><br>
+            <div class="divider"></div>
+            
             {% endif %}
 
             {% block content %}{% endblock %}
