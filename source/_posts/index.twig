@@ -3,11 +3,12 @@ id: 1
 layout: "_layouts/blog.twig"
 title: "Celyes.dev - browse all articles"
 relativeUrl: "index"
-categories:
+tags:
     - index
 img: "#"
 ---
-{% for post in posts|reverse %}
+{% include '_snippets/catinfo.twig' %}
+{% for post in posts|sort(post.getDateInFormat('Y-m-d'))|reverse %}
     {% if (post.id >= 10) %} 
     <div class="article-card">
         <h4 class="article-card-title"> 
@@ -16,13 +17,8 @@ img: "#"
             </a>
         </h4> 
         {% include '_snippets/postinfo.twig' %}
-        <span class="right">
-            {% for category in post.categories %}
-                <div class="chip">
-                    {{ category }}
-                </div>    
-            {% endfor %}    
-        </span>  
+        <br><br>
+        {% include '_snippets/catinfo.twig' %}  
         <br><br>
         <div class="divider"></div>
     </div>

@@ -1,5 +1,5 @@
 <i class="tiny material-icons grey-text">date_range</i>
-<time datetime="{{ post.getDateInFormat('Y-m-D') }}">
+<time datetime="{{ post.getDateInFormat('Y-m-d') }}">
     {% if post.updated_since is defined %}<strike>{% endif %}
 
     {% if post.getDateInFormat('Y') == "now"|date("Y") %}

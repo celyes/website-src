@@ -5,6 +5,9 @@
     
         {% if (post.id >= 10) %}
         {% include '_snippets/parallax.twig' %}
+        {% else %}
+        {% include '_snippets/navbar.twig' %}
+
         {% endif %}
         <div class="container container-tight">
           <div class="col-12">
