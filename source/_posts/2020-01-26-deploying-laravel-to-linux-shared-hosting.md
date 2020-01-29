@@ -5,8 +5,6 @@ title: "Deploying a laravel app to a linux shared hosting"
 relativeUrl: "deploying-a-laravel-app-to-a-linux-shared-hosting"
 categories: 
     - "web"
-    - "php"
-    - "laravel"
 img: "2020-01-26-deploying-laravel-to-linux-shared-hosting.webp"
 ---
 

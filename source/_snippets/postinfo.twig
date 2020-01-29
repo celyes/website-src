@@ -1,28 +1,28 @@
 <i class="tiny material-icons grey-text">date_range</i>
-            <time datetime="{{ post.getDateInFormat('Y-m-D') }}">
-                {% if post.updated_since is defined %}<strike>{% endif %}
+<time datetime="{{ post.getDateInFormat('Y-m-D') }}">
+    {% if post.updated_since is defined %}<strike>{% endif %}
 
-                {% if post.getDateInFormat('Y') == "now"|date("Y") %}
-                    {{ post.getDateInFormat('D, M j') }}
-                {% else %}
-                    {{ post.getDateInFormat('D, M j, Y') }}
-                {% endif %}
+    {% if post.getDateInFormat('Y') == "now"|date("Y") %}
+        {{ post.getDateInFormat('D, M j') }}
+    {% else %}
+        {{ post.getDateInFormat('D, M j, Y') }}
+    {% endif %}
 
-                {% if post.updated_since is defined %}</strike>{% endif %}
-            </time>
-            &nbsp;&nbsp;
-            <span class="pipe grey-text text-lighten-2">|</span>
-            &nbsp;&nbsp; 
-            <i class="tiny material-icons grey-text">person</i> 
-            {{ author }}
-            &nbsp;&nbsp;
-            <span class="pipe grey-text text-lighten-2">|</span>
-            &nbsp;&nbsp; 
-            <i class="tiny material-icons grey-text">timer</i>
-            {{ post.getReadingTimeInMinutes() }} min
-            <span class="right comments-counter">
-              <i class="tiny material-icons grey-text">comment</i>
-              &nbsp;<a href="#disqus_thread" class="black-text">Post a comment</a>
-            </span>  
-            <br><br>
-            <div class="divider"></div>
+    {% if post.updated_since is defined %}</strike>{% endif %}
+</time>
+&nbsp;&nbsp;
+<span class="pipe grey-text text-lighten-2">|</span>
+&nbsp;&nbsp; 
+<i class="tiny material-icons grey-text">person</i> 
+{{ author }}
+&nbsp;&nbsp;
+<span class="pipe grey-text text-lighten-2">|</span>
+&nbsp;&nbsp; 
+<i class="tiny material-icons grey-text">timer</i>
+{{ post.getReadingTimeInMinutes() }} min
+<span class="right comments-counter">
+    <i class="tiny material-icons grey-text">comment</i>
+    &nbsp;<a href="#disqus_thread" class="black-text">Post a comment</a>
+</span>  
+<br><br>
+<div class="divider"></div>

@@ -1,17 +1,19 @@
 ---
-id: 1
+id: 2
 layout: "_layouts/blog.twig"
-title: "Celyes.dev - browse all articles"
-relativeUrl: "index"
+title: "Celyes.dev - Web"
+relativeUrl: "web"
 categories:
-    - index
+    - web
 img: "#"
 ---
 {% for post in posts %}
-    {% if (post.id >= 10) %} 
+    {% if (post.id >= 10 and "web" in post.categories) %} 
     <div class="col-md-4 col-sm-6 col-xs-12">
         <div class="project-card">
             <a rel="noopener" href="{{site_url}}/{{post.relativeUrl}}" class="title">{{post.title}}</a>
+             
+            <!--<img src="{{site_url}}img/{{post.img}}"> -->
         </div>
     </div>
     {% endif %}
