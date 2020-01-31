@@ -6,5 +6,6 @@ parameters:
     site_moto: celyes.dev
     img_url: https://celyes.github.io/img
     blog_url: https://celyes.github.io/blog
+    icon_url: https://celyes.github.io/assets/icons
     socials:
         github: https://github.com/celyes
