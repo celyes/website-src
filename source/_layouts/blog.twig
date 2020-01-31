@@ -3,21 +3,29 @@
     {% include '_snippets/head.twig' %}
     <body>
     
-        {% if (post.id != 1) %}
+        {% if (post.id >= 10) %}
         {% include '_snippets/parallax.twig' %}
+        {% else %}
+        {% include '_snippets/navbar.twig' %}
+
         {% endif %}
         <div class="container container-tight">
           <div class="col-12">
             <br>
-            {% if (post.id != 1) %}
+            {% if (post.id >= 10) %}
             {% include '_snippets/postinfo.twig' %}
+            {% include '_snippets/commentsCounter.twig' %}
+            
+            <br><br>
+            <div class="divider"></div>
+            
             {% endif %}
 
             {% block content %}{% endblock %}
             
             <br>
             <br>
-            {% if (post.id != 1) %}
+            {% if (post.id >= 10) %}
             {% include '_snippets/disqus.twig' %}
             {% endif %}
           </div>

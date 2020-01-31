@@ -1,0 +1,46 @@
+<nav class="z-depth-0 parallax-navbar">
+    <div class="container">
+        <div class="nav-wrapper">
+            <a href="{{blog_url}}" class="brand-logo">{{site_moto}}</a> 
+            <a href="#" data-activates="mobile-demo" class="button-collapse">
+                <i class="material-icons">menu</i>
+            </a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="{{blog_url}}">All articles</a></li>
+                <li><a href="{{site_url}}">About me</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="{{socials.github}}">GitHub</a></li>
+                <li>
+                    <a class="modal-trigger" href="#modal1">
+                        <i class="material-icons">search</i>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="side-nav" id="mobile-demo">
+                <li><h4 class="red-text text-accent-3">{{site_moto}}</h4></li>
+                <li>
+                    <a class="modal-trigger" href="#modal1">
+                        <i class="material-icons">search</i>
+                    </a>
+                </li>
+                <li><a href="{{blog_url}}">All articles</a></li>
+                <li><a href="{{site_url}}">About me</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="{{socials.github}}">GitHub</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <h4 class="center">Search</h4>
+        <form id="searchform">
+            <div class="row">
+                <div class="input-field col s12">
+                <input id="searchInput" type="text" class="search" >
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,21 +1,26 @@
 ---
 id: 1
 layout: "_layouts/blog.twig"
-title: "Celyes' Web blog - browse all articles"
+title: "Browse all articles"
 relativeUrl: "index"
-categories:
+tags:
     - index
 img: "#"
 ---
-{% for post in posts %}
-    {% if (post.id != 1) %} 
-    <div class="col-md-4 col-sm-6 col-xs-12">
-        <div class="project-card">
-            <a rel="noopener" href="{{site_url}}/{{post.relativeUrl}}" class="title">{{post.title}}</a>
-             
-            <!--<img src="{{site_url}}img/{{post.img}}"> -->
-        </div>
+{% include '_snippets/catinfo.twig' %}
+{% for post in posts|sort(post.getDateInFormat('Y-m-d'))|reverse %}
+    {% if (post.id >= 10) %} 
+    <div class="article-card">
+        <h4 class="article-card-title"> 
+            <a rel="noopener" href="{{site_url}}/{{post.relativeUrl}}" class="purple-text text-darken-4">
+                {{post.title}} 
+            </a>
+        </h4> 
+        {% include '_snippets/postinfo.twig' %}
+        <br><br>
+        {% include '_snippets/catinfo.twig' %}  
+        <br><br>
+        <div class="divider"></div>
     </div>
     {% endif %}
 {% endfor %}
-</div>
