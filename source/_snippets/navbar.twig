@@ -1,39 +1,44 @@
-<nav class="z-depth-0 grey lighten-4 navbar-black-text">
-    <div class="container">
-        <div class="nav-wrapper">
-            <a href="{{blog_url}}" class="brand-logo black-text">{{site_moto}}</a>
-            <a href="#" data-activates="mobile-demo" class="button-collapse">
-                <i class="material-icons">menu</i>
-            </a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="{{blog_url}}" class="black-text">All articles</a></li>
-                <li><a href="{{site_url}}" class="black-text">About me</a></li>
-                <li><a href="#" class="black-text">Contact</a></li>
-                <li><a href="{{socials.github}}" class="black-text">GitHub</a></li>
-                <li>
-                    <a class="modal-trigger black-text" href="#modal1">
-                        <i class="material-icons">search</i>
-                    </a>
-                </li>
-            </ul>
-            <ul class="side-nav" id="mobile-demo">
-                <li><a href="{{blog_url}}">All articles</a></li>
-                <li><a href="{{site_url}}">About me</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="{{socials.github}}">GitHub</a></li>
-                <li>
-                    <a class="modal-trigger" href="#modal1">
-                        <i class="material-icons">search</i>
-                    </a>
-                </li>
-            </ul>
+<div class="navbar-fixed">
+    <nav class="z-depth-0 grey lighten-4 navbar-black-text">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="{{blog_url}}" class="brand-logo black-text">{{site_moto}}</a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse">
+                    <i class="material-icons black-text">menu</i>
+                </a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="{{blog_url}}" class="black-text">All articles</a></li>
+                    <li><a href="{{site_url}}" class="black-text">About me</a></li>
+                    <li><a href="#" class="black-text">Contact</a></li>
+                    <li><a href="{{socials.github}}" class="black-text">GitHub</a></li>
+                    <li>
+                        <a class="modal-trigger black-text" href="#modal1">
+                            <i class="material-icons">search</i>
+                        </a>
+                    </li>
+                </ul>
+                
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
+</div>
+
+<ul class="side-nav center" id="mobile-demo">
+    <li><h4 class="red-text text-accent-3">{{site_moto}}</h4></li>
+    <li>
+        <a class="modal-trigger" href="#modal1">
+            <i class="material-icons">search</i>
+        </a>
+    </li>
+    <li><a href="{{blog_url}}">All articles</a></li>
+    <li><a href="{{site_url}}">About me</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="{{socials.github}}">GitHub</a></li>
+</ul>
 
 <div id="modal1" class="modal">
     <div class="modal-content">
-        <h4>Search</h4>
+        <h4 class="center">Search</h4>
         <form id="searchform">
             <div class="row">
                 <div class="input-field col s12">
