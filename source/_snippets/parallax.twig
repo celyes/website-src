@@ -1,6 +1,6 @@
 <div class="parallax-container">
           
-    {% include '_snippets/navbar.twig' %}
+    {% include '_snippets/parallaxNavbar.twig' %}
     
     <div class="parallax">
         <img src="{{img_url}}/{{post.img}}" />
@@ -8,9 +8,9 @@
     <div class="vertical-center">
         <h1 class="white-text center headline-text">{{post.title}}</h1>
     </div>
-    <div class="category-chips">
-        {% for category in post.categories %}
-        <div class="chip">{{ category }}</div>
+    <div class="tag-chips">
+        {% for tag in post.tags %}
+        <div class="chip">{{ tag }}</div>
         {% endfor %}
     </div>
 </div>

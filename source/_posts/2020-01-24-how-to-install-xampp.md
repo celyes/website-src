@@ -3,7 +3,7 @@ id: 10
 layout: "_layouts/blog.twig"
 title: "How to install xampp on windows"
 relativeUrl: "how-to-install-xampp"
-categories: 
+tags: 
     - "linux"
 img: "2020-01-24-how-to-install-xampp.jpg"
 ---

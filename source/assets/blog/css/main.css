@@ -22,6 +22,9 @@ body{
 .parallax-container .parallax img{
     max-height: 170%;
 }
+.navbar-black-text ul li{
+    color: black;
+}
 .vertical-center{
     position: absolute;
     text-align: center;
@@ -37,10 +40,7 @@ body{
     width: 80%;
     margin: auto;
 }
-.bog-hero-container{
-    height: calc(100% - 64px);
-}
-.category-chips{
+.tag-chips{
     position: absolute;
     left: 10px;
     bottom: 10px;
@@ -71,7 +71,7 @@ nav .brand-logo{
     position: relative;
 }
 .article-card{
-    padding: 15px 0;
+    padding-bottom: 10px;
 }
 .article-card .article-card-title{
     font-weight: 200 !important;
@@ -84,8 +84,19 @@ code {
 .page-footer ul li, .page-footer p{
     line-height: 2rem;
 }
+.side-nav li > a > i.material-icons{
+    float: none;
+    margin: auto;
+}
 
-
+input:not([type]):focus:not([readonly]), input[type="text"]:not(.browser-default):focus:not([readonly]), input[type="password"]:not(.browser-default):focus:not([readonly]), input[type="email"]:not(.browser-default):focus:not([readonly]), input[type="url"]:not(.browser-default):focus:not([readonly]), input[type="time"]:not(.browser-default):focus:not([readonly]), input[type="date"]:not(.browser-default):focus:not([readonly]), input[type="datetime"]:not(.browser-default):focus:not([readonly]), input[type="datetime-local"]:not(.browser-default):focus:not([readonly]), input[type="tel"]:not(.browser-default):focus:not([readonly]), input[type="number"]:not(.browser-default):focus:not([readonly]), input[type="search"]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]){
+    border-bottom: 1px solid #000;
+    -webkit-box-shadow: 0 1px 0 0 #000;
+    box-shadow: 0 1px 0 0#000;
+}
+.side-nav{
+    z-index: 998;
+}
 @media(max-width: 768px){
     .container-tight{
         width: 90% !important;
