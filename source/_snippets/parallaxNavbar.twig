@@ -5,25 +5,10 @@
             <a href="#" data-activates="mobile-demo" class="button-collapse">
                 <i class="material-icons">menu</i>
             </a>
+            <a class="modal-trigger right search-icon" href="#modal1">
+                <i class="material-icons">search</i>
+            </a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="{{blog_url}}">All articles</a></li>
-                <li><a href="{{site_url}}">About me</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="{{socials.github}}">GitHub</a></li>
-                <li>
-                    <a class="modal-trigger" href="#modal1">
-                        <i class="material-icons">search</i>
-                    </a>
-                </li>
-            </ul>
-
-            <ul class="side-nav" id="mobile-demo">
-                <li><h4 class="red-text text-accent-3">{{site_moto}}</h4></li>
-                <li>
-                    <a class="modal-trigger" href="#modal1">
-                        <i class="material-icons">search</i>
-                    </a>
-                </li>
                 <li><a href="{{blog_url}}">All articles</a></li>
                 <li><a href="{{site_url}}">About me</a></li>
                 <li><a href="#">Contact</a></li>
@@ -32,6 +17,8 @@
         </div>
     </div>
 </nav>
+
+{% include '_snippets/mobileNavbar.twig' %}
 <div id="modal1" class="modal">
     <div class="modal-content">
         <h4 class="center">Search</h4>

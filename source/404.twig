@@ -1,12 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Ilyes Chouia - full stack web developer and translator, PHP enthusiast and guru">
-        <meta name="keywords" content="developer,web,PHP,translation,nodejs,translator">
+        <!-- meta -->
+        <meta charset="UTF-8">      
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="description" content="Ilyes Chouia - full stack web developer and enthusiast, also a translator">
+        <meta name="keywords" content="developer,web,PHP,translation,nodejs,translator,blog">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+        <!-- links -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700&display=swap" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">        
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/styles/xcode.min.css" />
+        <link rel="stylesheet" href="{{site_url}}/assets/blog/css/main.css" />
+        
         <!-- favicons -->
         <link rel="shortcut icon" href="//celyes.github.io/favicon.ico" />
         <link rel="apple-touch-icon" sizes="57x57" href="{{icon_url}}/apple-icon-57x57.png">
@@ -26,19 +35,19 @@
         <meta name="msapplication-TileColor" content="#ffffff">
         <meta name="msapplication-TileImage" content="{{icon_url}}/ms-icon-144x144.png">
         <meta name="theme-color" content="#f5f5f5">
+        <!-- title -->
+        <title>{{ title }}</title>  
         
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="{{site_url}}/assets/css/main.css" />
-        <title>{{ title }}</title> 
-
     </head>
-    <body>
-            {% block content %}
-            
-            {% endblock %}
+    <body class="not-found-body">
+        <div class="not-found-message">
+            <h1 class="blue-grey-text text-darken-4">404</h1>
+            <p class="blue-grey-text text-darken-4">Page Not found | 
+                <a class="blue-grey-text text-darken-4" href="{{site_url}}">
+                <i class="material-icons">home</i>Get Me Home</a>
+            </p>
         </div>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-        <script src="{{site_url}}/assets/js/main.js"></script>
-
+        <!-- scripts -->
+        {% include '_snippets/scripts.twig' %}
     </body>
-</html>
+</html>    

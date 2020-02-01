@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700&display=swap');
 body{
     font-family: 'Source Sans Pro', 'Segoe UI', Ubuntu, Arial, sans-serif;
 }
@@ -88,7 +87,9 @@ code {
     float: none;
     margin: auto;
 }
-
+.search-icon{
+    padding: 0 10px;
+}
 input:not([type]):focus:not([readonly]), input[type="text"]:not(.browser-default):focus:not([readonly]), input[type="password"]:not(.browser-default):focus:not([readonly]), input[type="email"]:not(.browser-default):focus:not([readonly]), input[type="url"]:not(.browser-default):focus:not([readonly]), input[type="time"]:not(.browser-default):focus:not([readonly]), input[type="date"]:not(.browser-default):focus:not([readonly]), input[type="datetime"]:not(.browser-default):focus:not([readonly]), input[type="datetime-local"]:not(.browser-default):focus:not([readonly]), input[type="tel"]:not(.browser-default):focus:not([readonly]), input[type="number"]:not(.browser-default):focus:not([readonly]), input[type="search"]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]){
     border-bottom: 1px solid #000;
     -webkit-box-shadow: 0 1px 0 0 #000;
@@ -96,6 +97,32 @@ input:not([type]):focus:not([readonly]), input[type="text"]:not(.browser-default
 }
 .side-nav{
     z-index: 998;
+}
+
+/* 404 */
+
+.not-found-body{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url("/img/404.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    overflow-x: hidden;
+    text-align:center;
+}
+.not-found-message{
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    top: 50% !important;
+    text-transform: uppercase;
+}
+.not-found-message h1{
+    font-weight: 700;
+    font-size: 90px;
 }
 @media(max-width: 768px){
     .container-tight{
