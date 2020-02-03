@@ -105,7 +105,7 @@ input:not([type]):focus:not([readonly]), input[type="text"]:not(.browser-default
     position: relative;
     width: 100%;
     height: 100%;
-    background-image: url("/img/404.jpg");
+    background-image: url("/img/404.webp");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -123,6 +123,7 @@ input:not([type]):focus:not([readonly]), input[type="text"]:not(.browser-default
 .not-found-message h1{
     font-weight: 700;
     font-size: 90px;
+    margin-bottom: 0;
 }
 @media(max-width: 768px){
     .container-tight{
