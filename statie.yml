@@ -1,0 +1,12 @@
+# example.statie.yml
+parameters:
+    site_url: https://celyes.github.io
+    title: celyes.dev
+    author: Ilyes Chouia
+    mail: celyes@protonmail.com
+    site_moto: celyes.dev
+    img_url: https://celyes.github.io/img
+    blog_url: https://celyes.github.io/blog
+    icon_url: https://celyes.github.io/assets/icons
+    socials:
+        github: https://github.com/celyes
