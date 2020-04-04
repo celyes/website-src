@@ -1,3 +1,9 @@
+<ul id="categories-dropdown-menu" class="dropdown-content">
+
+{% for category in categories %}
+  <li><a href="{{blog_url}}/{{category}}" class="black-text">{{category}}</a></li>
+{% endfor %}
+</ul>
 <nav class="z-depth-0 parallax-navbar">
     <div class="container">
         <div class="nav-wrapper">
@@ -10,6 +16,8 @@
             </a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="{{blog_url}}">All articles</a></li>
+                <li><a href="#" class="black-text dropdown-button" data-activates="categories-dropdown-menu">Categories<i class="material-icons right">arrow_drop_down</i>
+                </a></li>
                 <li><a href="{{site_url}}">About me</a></li>
                 <li><a href="#">Contact</a></li>
                 <li><a href="{{socials.github}}">GitHub</a></li>

@@ -48,7 +48,12 @@
     
 </head>    <body>
     
-                <div class="navbar-fixed">
+                <ul id="categories-dropdown-menu" class="dropdown-content">
+
+  <li><a href="https://celyes.now.sh/blog/php" class="black-text">php</a></li>
+  <li><a href="https://celyes.now.sh/blog/linux" class="black-text">linux</a></li>
+</ul>
+<div class="navbar-fixed">
     <nav class="z-depth-0 grey lighten-4 navbar-black-text">
         <div class="container">
             <div class="nav-wrapper">
@@ -61,6 +66,8 @@
                 </a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li><a href="https://celyes.now.sh/blog" class="black-text">All articles</a></li>
+                    <li><a href="#" class="black-text dropdown-button" data-activates="categories-dropdown-menu">Categories<i class="material-icons right">arrow_drop_down</i>
+                    </a></li>
                     <li><a href="https://celyes.now.sh" class="black-text">About me</a></li>
                     <li><a href="mailto:celyes@protonmail.com" class="black-text">Contact</a></li>
                     <li><a href="https://github.com/celyes" class="black-text">GitHub</a></li>
@@ -70,10 +77,25 @@
     </nav>
 </div>
 
+
 <ul class="side-nav center" id="mobile-demo">
     <li><h4 class="red-text text-accent-3">celyes.dev</h4></li>
     <div class="divider"></div>
     <li><a href="https://celyes.now.sh/blog">All articles</a></li>
+    <li class="no-padding">
+	    <ul class="collapsible collapsible-accordion">
+	      <li>
+	        <a class="collapsible-header">Categories
+	        <i class="material-icons">arrow_drop_down</i></a>
+	        <div class="collapsible-body">
+	          <ul>
+							  	<li><a href="https://celyes.now.sh/blog/php" class="black-text">php</a></li>
+							  	<li><a href="https://celyes.now.sh/blog/linux" class="black-text">linux</a></li>
+								</ul>
+	        </div>
+	      </li>
+	    </ul>
+  	</li>
     <li><a href="https://celyes.now.sh">About me</a></li>
     <li><a href="mailto:celyes@protonmail.com">Contact</a></li>
     <li><a href="https://github.com/celyes">GitHub</a></li>

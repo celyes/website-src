@@ -9,3 +9,6 @@ parameters:
     icon_url: https://celyes.now.sh/assets/icons
     socials:
         github: https://github.com/celyes
+    categories:
+        - php
+        - linux
