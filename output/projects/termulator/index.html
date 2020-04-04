@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Terminal Emulator</title>
+    <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+<body>
+    <div id="termulator">
+        <h4>MAC OS X Terminal</h4>
+        <div class="container">       
+            <div class="topbar">
+                <div class="red"></div>
+                <div class="yellow"></div>
+                <div class="green"></div>
+            <div class="title">{{user}}@{{pc}}</div>
+            </div>
+            <div class="term-body" id="term-body" v-on:click="focusElement">
+                <div class="input">
+                    <span>{{user}}@{{pc}}:~$</span>
+                    <input type="text" id="caret" autocomplete="off" v-model="content" v-on:keyup.enter="showOutput">
+                </div>
+            </div>
+        </div>
+            
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

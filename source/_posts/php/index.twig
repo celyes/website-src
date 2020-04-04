@@ -1,0 +1,27 @@
+---
+id: 3
+layout: "_layouts/blog.twig"
+title: "Browse all articles"
+relativeUrl: "index"
+tags:
+    - index
+img: "#"
+outputPath: "blog/php/"
+---
+{% include '_snippets/catinfo.twig' %}
+{% for post in posts|sort(post.getDateInFormat('Y-m-d'))|reverse %}
+    {% if (post.id >= 10 and "php" in post.tags) %} 
+    <div class="article-card">
+        <h4 class="article-card-title"> 
+            <a rel="noopener" href="{{site_url}}/{{post.relativeUrl}}" class="purple-text text-darken-4">
+                {{post.title}} 
+            </a>
+        </h4> 
+        {% include '_snippets/postinfo.twig' %}
+        <br><br>
+        {% include '_snippets/catinfo.twig' %}  
+        <br><br>
+        <div class="divider"></div>
+    </div>
+    {% endif %}
+{% endfor %}

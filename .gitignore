@@ -1,7 +1,2 @@
 vendor/
 node_modules/
-output/
-
-deploy.sh
-localdeploy.sh
-

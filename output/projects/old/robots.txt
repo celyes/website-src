@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /workers/*.html
+Disallow: /workers/*.js

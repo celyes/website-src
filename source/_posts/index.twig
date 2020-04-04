@@ -6,6 +6,7 @@ relativeUrl: "index"
 tags:
     - index
 img: "#"
+outputPath: "blog/"
 ---
 {% include '_snippets/catinfo.twig' %}
 {% for post in posts|sort(post.getDateInFormat('Y-m-d'))|reverse %}
