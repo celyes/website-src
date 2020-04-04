@@ -1,4 +1,4 @@
-<i class="tiny material-icons grey-text">date_range</i>
+<i class="tiny material-icons black-text">date_range</i>
 <time datetime="{{ post.getDateInFormat('Y-m-d') }}">
     {% if post.updated_since is defined %}<strike>{% endif %}
 
@@ -13,10 +13,10 @@
 &nbsp;&nbsp;
 <span class="pipe grey-text text-lighten-2">|</span>
 &nbsp;&nbsp; 
-<i class="tiny material-icons grey-text">person</i> 
+<i class="tiny material-icons black-text">person</i> 
 {{ author }}
 &nbsp;&nbsp;
 <span class="pipe grey-text text-lighten-2">|</span>
 &nbsp;&nbsp; 
-<i class="tiny material-icons grey-text">timer</i>
+<i class="tiny material-icons black-text">timer</i>
 {{ post.getReadingTimeInMinutes() }} min
