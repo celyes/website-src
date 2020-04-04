@@ -1,4 +1,3 @@
-# example.statie.yml
 parameters:
     site_url: https://celyes.now.sh
     title: celyes.dev

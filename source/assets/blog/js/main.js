@@ -10,7 +10,7 @@ $(document).ready(function(){
         e.preventDefault();
         var val = $('#searchInput').val();
         if(val != ""){
-            var win = window.open('http://google.com/search?q='+val+'+site:celyes.github.io', '_blank');
+            var win = window.open('http://google.com/search?q='+val+'+site:celyes.now.sh', '_blank');
             win ? win.focus() : alert('Please allow popups for this website'); 
         }else{
             $('#searchInput').attr('class', 'is-invalid');
