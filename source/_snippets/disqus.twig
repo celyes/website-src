@@ -1,20 +1,20 @@
-<button id="btn-show-comments" class="btn purple darken-4" data-post-id="{{post.id}}">Show comments</button>
+<button class="js-disqus-button btn purple darken-4">Show comments</button>
 <br><br>
 
 <div id="disqus_thread"></div>
 
 <script>
-	var disqusThreadDiv = document.getElementById('disqus_thread');
-	var commentsButton = document.getElementsById('btn-show-comments');
+	var $disqusThreadDiv = document.getElementById('disqus_thread');
+	var $commentsButton = document.getElementsByClassName('js-disqus-button')[0];
 
-	if (!disqusThreadDiv || !commentsButton) {return};
+	if (!$disqusThreadDiv || !$commentsButton) {return};
 
 	var disqus_config = function () {
 	  this.page.url = window.location.href; // use your page url here
 	  this.page.identifier = "{{post.id}}"; // use your page identifier here
 	};
 
-	commentsButton.addEventListener('click', function(event) {
+	$commentsButton.addEventListener('click', function(event) {
 	  var d = document, s = d.createElement('script');
 	  s.src = 'https://celyes-blog.disqus.com/embed.js'; 
 	  s.setAttribute('data-timestamp', + new Date());
