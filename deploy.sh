@@ -9,4 +9,5 @@ fi
 vendor/bin/statie generate source
 git add .
 git commit -m "$1"
+git push origin master
 echo -e "\e[1;32mDeployed successfully!\e[0m"

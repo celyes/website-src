@@ -7,7 +7,7 @@
 	var disqusThreadDiv = document.getElementById('disqus_thread');
 	var commentsButton = document.getElementsById('btn-show-comments');
 
-	if (!disqusThreadDiv || !commentsButton) return;
+	if (!disqusThreadDiv || !commentsButton) {return};
 
 	var disqus_config = function () {
 	  this.page.url = window.location.href; // use your page url here
@@ -25,5 +25,4 @@
 </script>
 
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">the comments.</a></noscript>
-/*<script id="dsq-count-scr" src="//celyes-blog.disqus.com/count.js" async></script>
-*/
+<!--<script id="dsq-count-scr" src="//celyes-blog.disqus.com/count.js" async></script>-->
