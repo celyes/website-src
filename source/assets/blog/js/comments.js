@@ -1,11 +1,11 @@
 var disqusThreadDiv = document.getElementById('disqus_thread');
 var commentsButton = document.getElementsByClassName('js-disqus-button')[0];
 
-if (!disqusThreadDiv || !commentsButton) {return};
+//if (!disqusThreadDiv || !commentsButton) {return};
 
 var disqus_config = function () {
-  this.page.url = window.location.href; // use your page url here
-  this.page.identifier = "{{post.id}}"; // use your page identifier here
+  this.page.url = window.location.href; 
+  this.page.identifier = "{{post.id}}";
 };
 
 commentsButton.addEventListener('click', function(event) {
