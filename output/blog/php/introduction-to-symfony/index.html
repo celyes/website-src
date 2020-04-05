@@ -182,28 +182,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 <div id="disqus_thread"></div>
 
-<script>
-	var $disqusThreadDiv = document.getElementById('disqus_thread');
-	var $commentsButton = document.getElementsByClassName('js-disqus-button')[0];
-
-	if (!$disqusThreadDiv || !$commentsButton) {return};
-
-	var disqus_config = function () {
-	  this.page.url = window.location.href; // use your page url here
-	  this.page.identifier = "11"; // use your page identifier here
-	};
-
-	$commentsButton.addEventListener('click', function(event) {
-	  var d = document, s = d.createElement('script');
-	  s.src = 'https://celyes-blog.disqus.com/embed.js'; 
-	  s.setAttribute('data-timestamp', + new Date());
-	  (d.head || d.body).appendChild(s);
-
-	  event.target.parentElement.removeChild(event.target);
-	})
-</script>
-
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">the comments.</a></noscript>
+<noscript>Please enable JavaScript to view the comments.</a></noscript>
 <!--<script id="dsq-count-scr" src="//celyes-blog.disqus.com/count.js" async></script>-->
                       </div>
         </div>
@@ -252,5 +231,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/highlight.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/languages/php.min.js"></script>
         <script src="https://celyes.now.sh/assets/blog/js/main.js"></script>
+		<script src="https://celyes.now.sh/assets/blog/js/comments.js"></script>
     </body>
 </html>
