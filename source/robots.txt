@@ -9,6 +9,5 @@ Allow: /
 # Group 3
 User-agent: *
 Disallow: /assets/
-Disallow: /assets/
 
-Sitemap: http://www.example.com/sitemap.xml
+Sitemap: http://celyes.now.sh/sitemap.xml
