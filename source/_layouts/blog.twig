@@ -22,7 +22,7 @@
             {% endif %}
 
             {% block content %}{% endblock %}
-            
+            <button id="btn-show-comments" class="btn purple darken-4" data-post-id="{{post.id}}">Show comments</button>
             <br>
             <br>
             {% if (post.id >= 10) %}
