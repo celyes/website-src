@@ -1,23 +1,33 @@
+<button id="btn-show-comments" class="btn purple darken-4" data-post-id="{{post.id}}">Show comments</button>
+<br><br>
+
 <div id="disqus_thread"></div>
+
 <script>
+	var disqusThreadDiv = document.getElementById(
+	  'disqus_thread'
+	);
+	var $commentsButton = document.getElementsById(
+	  'btn-show-comments'
+	)[0];
 
-/**
-*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+	if (!disqusThreadDiv || !commentsButton) return;
 
-var disqus_config = function () {
-this.page.url = window.location.href; 
+	var disqus_config = function () {
+	  this.page.url = window.location.href; // use your page url here
+	  this.page.identifier = "{{post.id}}"; // use your page identifier here
+	};
 
-this.page.identifier = "{{post.id}}"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
+	commentsButton.addEventListener('click', function(event) {
+	  var d = document, s = d.createElement('script');
+	  s.src = 'https://celyes-blog.disqus.com/embed.js'; 
+	  s.setAttribute('data-timestamp', + new Date());
+	  (d.head || d.body).appendChild(s);
 
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://celyes-blog.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
+	  event.target.parentElement.removeChild(event.target);
+	})
 </script>
+
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+/*<script id="dsq-count-scr" src="//celyes-blog.disqus.com/count.js" defer></script>
 */
-<script id="dsq-count-scr" src="//celyes-blog.disqus.com/count.js" defer></script>

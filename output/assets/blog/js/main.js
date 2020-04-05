@@ -19,25 +19,4 @@ $(document).ready(function(){
             $('#searchInput').attr('class', 'is-invalid');
         }
     });
-
-    // disqus
-    var disqusThreadDiv = $('#disqus_thread');
-    var commentsButton = $('#btn-show-comments');
-
-
-    if (!disqusThreadDiv || !commentsButton) return;
-
-    var disqus_config = function () {
-      this.page.url = window.location.href; // use your page url here
-      this.page.identifier = $(commentsButton).data('post-id'); // use your page identifier here
-    };
-
-    $(commentsButton).on('click', function(event) {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://celyes-blog.disqus.com/embed.js'; // use your disqus account name here
-      s.setAttribute('data-timestamp', + new Date());
-      (d.head || d.body).appendChild(s);
-
-      event.target.parentElement.removeChild(event.target);
-    })
 });
