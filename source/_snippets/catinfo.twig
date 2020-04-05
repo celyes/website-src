@@ -2,8 +2,6 @@
     <h5 class="red-text text-accent-3">All posts</h5>
 {% else %}
     {% for tag in post.tags %}
-    <div class="chip grey lighten-3 black-text">
-    {{ tag }}
-    </div>
+    <div class="chip grey lighten-3 black-text">{{ tag }}</div>
     {% endfor %}
 {% endif %}
