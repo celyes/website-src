@@ -7,6 +7,7 @@ parameters:
     img_url: https://celyes.now.sh/img
     blog_url: https://celyes.now.sh/blog
     icon_url: https://celyes.now.sh/assets/icons
+    img_assets_url: https://celyes.now.sh/assets/img
     socials:
         github: https://github.com/celyes
     categories:
