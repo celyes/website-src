@@ -8,7 +8,12 @@ tags:
 img: "#"
 outputPath: "blog/linux/"
 ---
-{% include '_snippets/catinfo.twig' %}
+
+<h5 class="red-text text-accent-3">All posts about: 
+    {% for tag in post.tags %}
+    {{tag}}
+    {% endfor %}
+</h5>
 {% for post in posts|sort(post.getDateInFormat('Y-m-d'))|reverse %}
     {% if (post.id >= 10 and "linux" in post.tags) %} 
     <div class="article-card">
