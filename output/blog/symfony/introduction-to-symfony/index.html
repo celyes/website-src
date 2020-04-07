@@ -155,7 +155,7 @@ in other words, it's a PHP MVC framework used to create website, APIs and Consol
 <h4 id="checking-requirements"><a href="#checking-requirements" class="heading-anchor">Checking requirements:</a></h4>
 <p>Symfony requires PHP version 7.2.15 at least in addition to some extensions which are: Ctype, iconv, JSON, PCRE, Session, SimpleXML and Tokenizer.</p>
 <p>in most cases, these extensions are installed by default with PHP, but you should make sure that all requirements are available by listing all the extensions using the following command:</p>
-<pre><code class="language-bash">$ php -m | less </code></pre>
+<pre><code class="language-bash">➜  ~ php -m | less </code></pre>
 <p>this will print a list of all installed PHP extensions on your machine as following:</p>
 <pre><code class="language-bash">[PHP Modules]
 bcmath
@@ -185,12 +185,12 @@ mysqli
 <h4 id="installing-symfony-using-composer"><a href="#installing-symfony-using-composer" class="heading-anchor">Installing Symfony using composer:</a></h4>
 <p>Composer is the package manager for PHP. it's the tool responsible for managing the packages and dependencies you use in your projects as well as providing useful features such as autoloading.</p>
 <p>let's open up a terminal window and type in the following command:</p>
-<pre><code class="language-bash">$ composer create-project symfony/website-skeleton MyFirstProject</code></pre>
+<pre><code class="language-bash">➜  ~ composer create-project symfony/website-skeleton MyFirstProject</code></pre>
 <p>after the installation is finished, you should be able to see a new folder named <code>MyFirstProject</code>.
 this folder contains all the files necessary for starting a new website which is cool, but how do we browse the actual website in a browser? well, after installing the project, go to <code>MyFirstProject</code> directory and start a new Symfony server by using this command:</p>
-<pre><code class="language-bash">$ cd MyFirstProject
-$ symfony server:start</code></pre>
-<p>seeing this message indicates that the server started and everything is cool ;) </p>
+<pre><code class="language-bash">➜  ~ cd MyFirstProject
+➜  ~ symfony server:start</code></pre>
+<p>seeing this message indicates that the server started and everything is cool 🤩</p>
 <pre><code class="language-bash">
  [OK] Web server listening on http://127.0.0.1:8000 (PHP CGI 7.3.11)
 </code></pre>
@@ -198,9 +198,9 @@ $ symfony server:start</code></pre>
 <p>Symfony CLI is the recommended way to install a new Symfony project since it offers a bunch of useful features such as a built-in web server, security checking tool and project creation on the fly. it also allows us to check the requirement before starting a newSymfony project.</p>
 <p>We can install it by executing this command.</p>
 <p>installing the CLI is an easy task. all you have to do is to execute this command:</p>
-<pre><code class="language-bash">$  wget https://get.symfony.com/cli/installer -O - | bash </code></pre>
+<pre><code class="language-bash">➜  ~  wget https://get.symfony.com/cli/installer -O - | bash </code></pre>
 <p>after we finish installing the CLI, let's check if the requirements are met on our machine:</p>
-<pre><code class="language-bash">$ symfony check:requirements</code></pre>
+<pre><code class="language-bash">➜  ~ symfony check:requirements</code></pre>
 <p>we should get this message:</p>
 <pre><code class="language-bash">Symfony Requirements Checker
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -214,14 +214,13 @@ $ symfony server:start</code></pre>
 
  [OK]                                         
  Your system is ready to run Symfony projects 
-
-➜  ~ </code></pre>
+</code></pre>
 <p>this indicates that all is ok and ready to go! let's move to the next step, which is the isntallation.  execute this command:</p>
-<pre><code class="language-bash">$ symfony new MyFirstProject --full</code></pre>
+<pre><code class="language-bash">➜  ~ symfony new MyFirstProject --full</code></pre>
 <p>Executing the command with <code>--full</code> flag is required when building a website, but when you want to use Symfony for building an API or a console application, don't use this flag.</p>
 <p>after installing the project, go to <code>MyFirstProject</code> directory and start a new Symfony server by using this command:</p>
-<pre><code class="language-bash">$ cd MyFirstProject
-$ symfony server:start</code></pre>
+<pre><code class="language-bash">➜  ~ cd MyFirstProject
+➜  ~ symfony server:start</code></pre>
 <p>seeing this message indicates that the server started and everything is cool ;) </p>
 <pre><code class="language-bash">
  [OK] Web server listening on http://127.0.0.1:8000 (PHP CGI 7.3.11)
@@ -278,6 +277,7 @@ $ symfony server:start</code></pre>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>        
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/highlight.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/languages/php.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/languages/bash.min.js"></script>
         <script src="https://celyes.now.sh/assets/blog/js/main.js"></script>
 		<script src="https://celyes.now.sh/assets/blog/js/comments.js"></script>
     </body>

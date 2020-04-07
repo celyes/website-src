@@ -25,7 +25,7 @@ Symfony requires PHP version 7.2.15 at least in addition to some extensions whic
 in most cases, these extensions are installed by default with PHP, but you should make sure that all requirements are available by listing all the extensions using the following command:
 
 ```bash
-$ php -m | less 
+➜  ~ php -m | less 
 ```
 this will print a list of all installed PHP extensions on your machine as following:
 
@@ -65,17 +65,17 @@ Composer is the package manager for PHP. it's the tool responsible for managing 
 let's open up a terminal window and type in the following command:
 
 ```bash
-$ composer create-project symfony/website-skeleton MyFirstProject
+➜  ~ composer create-project symfony/website-skeleton MyFirstProject
 ```
 
 after the installation is finished, you should be able to see a new folder named `MyFirstProject`. 
 this folder contains all the files necessary for starting a new website which is cool, but how do we browse the actual website in a browser? well, after installing the project, go to `MyFirstProject` directory and start a new Symfony server by using this command:
 
 ```bash
-$ cd MyFirstProject
-$ symfony server:start
+➜  ~ cd MyFirstProject
+➜  ~ symfony server:start
 ```
-seeing this message indicates that the server started and everything is cool ;) 
+seeing this message indicates that the server started and everything is cool 🤩
  
 ```bash
                                                                                                                         
@@ -91,12 +91,12 @@ We can install it by executing this command.
 
 installing the CLI is an easy task. all you have to do is to execute this command:
 ```bash
-$  wget https://get.symfony.com/cli/installer -O - | bash 
+➜  ~  wget https://get.symfony.com/cli/installer -O - | bash 
 ```
 after we finish installing the CLI, let's check if the requirements are met on our machine:
 
 ```bash
-$ symfony check:requirements
+➜  ~ symfony check:requirements
 ``` 
 we should get this message:
 
@@ -115,26 +115,26 @@ Symfony Requirements Checker
  [OK]                                         
  Your system is ready to run Symfony projects 
                                               
-➜  ~ 
 ```
 this indicates that all is ok and ready to go! let's move to the next step, which is the isntallation.  execute this command:
 
 ```bash
-$ symfony new MyFirstProject --full
+➜  ~ symfony new MyFirstProject --full
 ``` 
 Executing the command with `--full` flag is required when building a website, but when you want to use Symfony for building an API or a console application, don't use this flag.
 
 after installing the project, go to `MyFirstProject` directory and start a new Symfony server by using this command:
 
 ```bash
-$ cd MyFirstProject
-$ symfony server:start
+➜  ~ cd MyFirstProject
+➜  ~ symfony server:start
 ```
 seeing this message indicates that the server started and everything is cool ;) 
  
 ```bash
                                                                                                                         
  [OK] Web server listening on http://127.0.0.1:8000 (PHP CGI 7.3.11)
+
 
 ```
 we finished installing Symfony... now let's move to the next step!  
