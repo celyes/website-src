@@ -78,9 +78,7 @@ this folder contains all the files necessary for starting a new website which is
 seeing this message indicates that the server started and everything is cool 🤩
  
 ```bash                                                                                         
-
  [OK] Web server listening on http://127.0.0.1:8000 (PHP CGI 7.3.11)
-
 ```
 
 #### Installing Symfony using Symfony CLI:
