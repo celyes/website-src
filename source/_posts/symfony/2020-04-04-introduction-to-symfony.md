@@ -11,12 +11,8 @@ outputPath: "blog/symfony/introduction-to-symfony/"
 
 #### What is symfony:
 
-in this article, we will talk about how to get starte with symfony...
-
-According to the official website, Symfony is a set of open source PHP reusable components/libraries originally developed by [Fabien Potencier](https://twitter.com/fabpot). 
+Symfony is a set of open source PHP reusable components/libraries originally developed by [Fabien Potencier](https://twitter.com/fabpot). 
 in other words, it's a PHP MVC framework used to create website, APIs and Console applications of different sizes and for different purposes.
-
-
 
 #### Checking requirements:
 
