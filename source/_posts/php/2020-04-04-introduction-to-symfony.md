@@ -1,17 +1,22 @@
 ---
 id: 11
 layout: "_layouts/blog.twig"
-title: "Introduction to Symfony"
-relativeUrl: "introduction-to-symfony"
+title: "Symfony 101: introduction and installation"
+relativeUrl: "Symfony 101: introduction and installation"
 tags: 
     - "php"
 img: "2020-01-24-how-to-install-xampp.jpg"  
 outputPath: "blog/php/introduction-to-symfony/"
 ---
 
-in this article, we will be talking about how to install xampp on Windows...
+#### What is symfony?
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+in this article, we will talk about how to get starte with symfony...
+
+According to the official website, Symfony is a set of open source PHP reusable components/libraries originally developed by [Fabien Potencier](https://twitter.com/fabpot). 
+in other words, it's a PHP MVC framework used to create website, APIs and Console applications of different sizes and for different purposes.
+
+#### How to install Symfony?
 
 ```php
 namespace GuzzleHttp\Exception;
