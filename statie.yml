@@ -11,5 +11,4 @@ parameters:
     socials:
         github: https://github.com/celyes
     categories:
-        - php
-        - linux
+        - symfony

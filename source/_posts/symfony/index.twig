@@ -4,9 +4,9 @@ layout: "_layouts/blog.twig"
 title: "Browse all articles"
 relativeUrl: "index"
 tags:
-    - php
+    - symfony
 img: "#"
-outputPath: "blog/php/"
+outputPath: "blog/symfony/"
 ---
 
 <h5 class="red-text text-accent-3">All posts about: 
@@ -15,7 +15,7 @@ outputPath: "blog/php/"
     {% endfor %}
 </h5>
 {% for post in posts|sort(post.getDateInFormat('Y-m-d'))|reverse %}
-    {% if (post.id >= 10 and "php" in post.tags) %} 
+    {% if (post.id >= 10 and "symfony" in post.tags) %} 
     <div class="article-card">
         <h4 class="article-card-title"> 
             <a rel="noopener" href="{{site_url}}/{{post.relativeUrl}}" class="purple-text text-darken-4">

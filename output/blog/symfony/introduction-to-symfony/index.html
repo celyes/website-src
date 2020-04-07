@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <!-- meta -->
+    <meta charset="UTF-8">      
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Ilyes Chouia - full stack web developer and enthusiast, also a translator">
+    <meta name="keywords" content="developer,web,PHP,translation,nodejs,translator,blog">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- facebook open grpah -->
+    <meta property="og:url" content="https://celyes.now.sh/blog/symfony/introduction-to-symfony/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Symfony 101: introduction and installation" />
+    <meta property="og:description" content="Symfony 101: introduction and installation" />
+    <meta property="og:image" content="https://celyes.now.sh/img/2020-01-24-how-to-install-xampp.jpg" />
+    <meta property="og:image:width" content="450" />
+    <meta property="og:image:height" content="350" />
+    
+    <!-- links -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700&display=swap" />     
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap" rel="stylesheet">        
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/styles/xcode.min.css" />
+    <link rel="stylesheet" href="https://celyes.now.sh/assets/blog/css/main.css" />
+    
+    <!-- favicons -->
+    <link rel="shortcut icon" href="//celyes.github.io/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="57x57" href="https://celyes.now.sh/assets/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="https://celyes.now.sh/assets/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://celyes.now.sh/assets/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://celyes.now.sh/assets/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://celyes.now.sh/assets/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://celyes.now.sh/assets/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://celyes.now.sh/assets/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://celyes.now.sh/assets/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://celyes.now.sh/assets/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="https://celyes.now.sh/assets/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://celyes.now.sh/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="https://celyes.now.sh/assets/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://celyes.now.sh/assets/icons/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="https://celyes.now.sh/assets/icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#f5f5f5">
+    <!-- title -->
+    <title>Symfony 101: introduction and installation</title>  
+    
+</head>    <body>
+    
+                <div class="parallax-container">
+          
+    <ul id="categories-dropdown-menu" class="dropdown-content">
+
+  <li><a href="https://celyes.now.sh/blog/symfony" class="black-text">symfony</a></li>
+</ul>
+<nav class="z-depth-0 parallax-navbar">
+    <div class="container">
+        <div class="nav-wrapper">
+            <a href="https://celyes.now.sh/blog" class="brand-logo">celyes.dev</a> 
+            <a href="#" data-activates="mobile-demo" class="button-collapse">
+                <i class="material-icons">menu</i>
+            </a>
+            <a class="modal-trigger right search-icon" href="#modal1">
+                <i class="material-icons">search</i>
+            </a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="https://celyes.now.sh/blog">All articles</a></li>
+                <li><a href="#" class="white-text dropdown-button" data-activates="categories-dropdown-menu">Categories<i class="material-icons right">arrow_drop_down</i>
+                </a></li>
+                <li><a href="https://celyes.now.sh">About me</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="https://github.com/celyes">
+                    <img class="navbar-icon" src="https://celyes.now.sh/assets/img/github-white.svg">
+                </a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<ul class="side-nav center" id="mobile-demo">
+    <li><h4 class="red-text text-accent-3">celyes.dev</h4></li>
+    <div class="divider"></div>
+    <li><a href="https://celyes.now.sh/blog">All articles</a></li>
+    <li class="no-padding">
+	    <ul class="collapsible collapsible-accordion">
+	      <li>
+	        <a class="collapsible-header">Categories
+	        <i class="material-icons">arrow_drop_down</i></a>
+	        <div class="collapsible-body">
+	          <ul>
+							  	<li><a href="https://celyes.now.sh/blog/symfony" class="black-text">symfony</a></li>
+								</ul>
+	        </div>
+	      </li>
+	    </ul>
+  	</li>
+    <li><a href="https://celyes.now.sh">About me</a></li>
+    <li><a href="mailto:celyes@protonmail.com">Contact</a></li>
+    <li><a href="https://github.com/celyes">
+        <img class="navbar-icon" src="https://celyes.now.sh/assets/img/github.svg">
+    </a></li>
+
+</ul><div id="modal1" class="modal">
+    <div class="modal-content">
+        <h4 class="center">Search</h4>
+        <form id="searchform">
+            <div class="row">
+                <div class="input-field col s12">
+                <input id="searchInput" type="text" class="search" >
+                </div>
+            </div>
+        </form>
+    </div>
+</div>    
+    <div class="parallax">
+        <img src="https://celyes.now.sh/img/2020-01-24-how-to-install-xampp.jpg" alt="Symfony 101: introduction and installation" />
+    </div>
+    <div class="vertical-center">
+        <h1 class="white-text center headline-text">Symfony 101: introduction and installation</h1>
+    </div>
+    <div class="tag-chips">
+                <div class="chip">symfony</div>
+            </div>
+</div>
+                <div class="container container-tight">
+          <div class="col-12">
+            <br>
+                        <i class="tiny material-icons black-text">date_range</i>
+<time datetime="2020-04-04">
+    
+            Sat, Apr 4
+    
+    </time>
+&nbsp;&nbsp;
+<span class="pipe grey-text text-lighten-2">|</span>
+&nbsp;&nbsp; 
+<i class="tiny material-icons black-text">person</i> 
+Ilyes Chouia
+&nbsp;&nbsp;
+<span class="pipe grey-text text-lighten-2">|</span>
+&nbsp;&nbsp; 
+<i class="tiny material-icons black-text">timer</i>
+4 min            <span class="right comments-counter">
+    <i class="tiny material-icons black-text">comment</i>
+    &nbsp;<a href="#disqus_thread" class="black-text">Show comments</a>
+</span>              
+            <br><br>
+            <div class="divider"></div>
+            
+            
+            <h4 id="what-is-symfony"><a href="#what-is-symfony" class="heading-anchor">What is symfony:</a></h4>
+<p>in this article, we will talk about how to get starte with symfony...</p>
+<p>According to the official website, Symfony is a set of open source PHP reusable components/libraries originally developed by <a href="https://twitter.com/fabpot">Fabien Potencier</a>.
+in other words, it's a PHP MVC framework used to create website, APIs and Console applications of different sizes and for different purposes.</p>
+<h4 id="checking-requirements"><a href="#checking-requirements" class="heading-anchor">Checking requirements:</a></h4>
+<p>Symfony requires PHP version 7.2.15 at least in addition to some extensions which are: Ctype, iconv, JSON, PCRE, Session, SimpleXML and Tokenizer.</p>
+<p>in most cases, these extensions are installed by default with PHP, but you should make sure that all requirements are available by listing all the extensions using the following command:</p>
+<pre><code class="language-bash">$ php -m | less </code></pre>
+<p>this will print a list of all installed PHP extensions on your machine as following:</p>
+<pre><code class="language-bash">[PHP Modules]
+bcmath
+calendar
+Core
+ctype
+curl
+date
+dom
+exif
+fileinfo
+filter
+ftp
+gd
+gettext
+hash
+iconv
+intl
+json
+libxml
+mbstring
+mongodb
+mysqli
+:</code></pre>
+<p>use the down arrow to navigate through the list.</p>
+<p>after making sure all the requirements are available and met, proceed to the installation operation. as we mentioned above, there are two ways to install Symfony, either by using Composer which is the package manager for PHP, or by using Symfony CLI.</p>
+<h4 id="installing-symfony-using-composer"><a href="#installing-symfony-using-composer" class="heading-anchor">Installing Symfony using composer:</a></h4>
+<p>Composer is the package manager for PHP. it's the tool responsible for managing the packages and dependencies you use in your projects as well as providing useful features such as autoloading.</p>
+<p>let's open up a terminal window and type in the following command:</p>
+<pre><code class="language-bash">$ composer create-project symfony/website-skeleton MyFirstProject</code></pre>
+<p>after the installation is finished, you should be able to see a new folder named <code>MyFirstProject</code>.
+this folder contains all the files necessary for starting a new website which is cool, but how do we browse the actual website in a browser? well, after installing the project, go to <code>MyFirstProject</code> directory and start a new Symfony server by using this command:</p>
+<pre><code class="language-bash">$ cd MyFirstProject
+$ symfony server:start</code></pre>
+<p>seeing this message indicates that the server started and everything is cool ;) </p>
+<pre><code class="language-bash">
+ [OK] Web server listening on http://127.0.0.1:8000 (PHP CGI 7.3.11)
+</code></pre>
+<h4 id="installing-symfony-using-symfony-cli"><a href="#installing-symfony-using-symfony-cli" class="heading-anchor">Installing Symfony using Symfony CLI:</a></h4>
+<p>Symfony CLI is the recommended way to install a new Symfony project since it offers a bunch of useful features such as a built-in web server, security checking tool and project creation on the fly. it also allows us to check the requirement before starting a newSymfony project.</p>
+<p>We can install it by executing this command.</p>
+<p>installing the CLI is an easy task. all you have to do is to execute this command:</p>
+<pre><code class="language-bash">$  wget https://get.symfony.com/cli/installer -O - | bash </code></pre>
+<p>after we finish installing the CLI, let's check if the requirements are met on our machine:</p>
+<pre><code class="language-bash">$ symfony check:requirements</code></pre>
+<p>we should get this message:</p>
+<pre><code class="language-bash">Symfony Requirements Checker
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+&gt; PHP is using the following php.ini file:
+/etc/php/7.3/cli/php.ini
+
+&gt; Checking Symfony requirements:
+
+.............................
+
+ [OK]                                         
+ Your system is ready to run Symfony projects 
+
+➜  ~ </code></pre>
+<p>this indicates that all is ok and ready to go! let's move to the next step, which is the isntallation.  execute this command:</p>
+<pre><code class="language-bash">$ symfony new MyFirstProject --full</code></pre>
+<p>Executing the command with <code>--full</code> flag is required when building a website, but when you want to use Symfony for building an API or a console application, don't use this flag.</p>
+<p>after installing the project, go to <code>MyFirstProject</code> directory and start a new Symfony server by using this command:</p>
+<pre><code class="language-bash">$ cd MyFirstProject
+$ symfony server:start</code></pre>
+<p>seeing this message indicates that the server started and everything is cool ;) </p>
+<pre><code class="language-bash">
+ [OK] Web server listening on http://127.0.0.1:8000 (PHP CGI 7.3.11)
+</code></pre>
+<p>we finished installing Symfony... now let's move to the next step!  </p>                        <br>
+<button class="js-disqus-button btn btn-flat purple darken-4 white-text">Show comments</button>
+
+<div id="disqus_thread"></div>
+<noscript>Please enable JavaScript to view the comments.</noscript>
+<!--<script id="dsq-count-scr" src="//celyes-blog.disqus.com/count.js" async></script>-->
+                      </div>
+        </div>
+
+        <!-- footer -->
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        <footer class="page-footer grey lighten-4">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="black-text">Footer Content</h5>
+        <p class="black-text">You can use rows and columns here to organize your footer content.</p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="black-text">Links</h5>
+        <ul>
+          <li><a class="black-text" href="https://celyes.now.sh">All Articles</a></li>
+          <li><a class="black-text" href="https://celyes.now.sh">About</a></li>
+          <li><a class="black-text" href="https://celyes.now.sh">Contact</a></li>
+          <li>
+            <a class="black-text" href="https://github.com/celyes">
+              <span class="fab fa-github"></span> GitHub
+            </a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container black-text">
+    © 2020 Celyes.dev
+    <span class="right grey-text text-darken-2">Generated using 
+      <a class="black-text" href="https://statie.org"><strong>Statie</strong></a>
+    </span>
+    </div>
+  </div>
+</footer>
+        <!-- scripts -->
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/languages/php.min.js"></script>
+        <script src="https://celyes.now.sh/assets/blog/js/main.js"></script>
+		<script src="https://celyes.now.sh/assets/blog/js/comments.js"></script>
+    </body>
+</html>
