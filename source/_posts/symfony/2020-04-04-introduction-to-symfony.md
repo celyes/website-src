@@ -37,17 +37,6 @@ dom
 exif
 fileinfo
 filter
-ftp
-gd
-gettext
-hash
-iconv
-intl
-json
-libxml
-mbstring
-mongodb
-mysqli
 :
 ```
 use the down arrow to navigate through the list.
