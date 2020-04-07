@@ -112,7 +112,7 @@ after installing the project, go to `my_first_project` directory and start a new
 $ cd my_first_project
 $ symfony server:start
 ```
-seeing this message indicates that the server started and everything is cool ;) 
+seeing this message indicates that the server running correctly:
  
 ```bash                                                    
  [OK] Web server listening on http://127.0.0.1:8000 (PHP CGI 7.3.11)
