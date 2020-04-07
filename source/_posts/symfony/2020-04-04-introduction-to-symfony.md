@@ -50,14 +50,14 @@ Composer is the package manager for PHP. it's the tool responsible for managing 
 let's open up a terminal window and type in the following command:
 
 ```bash
-$ composer create-project symfony/website-skeleton MyFirstProject
+$ composer create-project symfony/website-skeleton my_first_project
 ```
 
-after the installation is finished, you should be able to see a new folder named `MyFirstProject`. 
-this folder contains all the files necessary for starting a new website which is cool, but how do we browse the actual website in a browser? well, after installing the project, go to `MyFirstProject` directory and start a new Symfony server by using this command:
+after the installation is finished, you should be able to see a new folder named `my_first_project`. 
+this folder contains all the files necessary for starting a new website which is cool, but how do we browse the actual website in a browser? well, after installing the project, go to `my_first_project` directory and start a new Symfony server by using this command:
 
 ```bash
-$ cd MyFirstProject
+$ cd my_first_project
 $ symfony server:start
 ```
 seeing this message indicates that the server started and everything is working correctly:
@@ -102,14 +102,14 @@ Symfony Requirements Checker
 this indicates that all is ok and ready to go! let's move to the next step, which is the isntallation.  execute this command:
 
 ```bash
-$ symfony new MyFirstProject --full
+$ symfony new my_first_project --full
 ``` 
 Executing the command with `--full` flag is required when building a website, but when you want to use Symfony for building an API or a console application, don't use this flag.
 
-after installing the project, go to `MyFirstProject` directory and start a new Symfony server by using this command:
+after installing the project, go to `my_first_project` directory and start a new Symfony server by using this command:
 
 ```bash
-$ cd MyFirstProject
+$ cd my_first_project
 $ symfony server:start
 ```
 seeing this message indicates that the server started and everything is cool ;) 
