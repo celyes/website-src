@@ -5,7 +5,7 @@ title: "Symfony 101: introduction and installation"
 relativeUrl: "Symfony 101: introduction and installation"
 tags: 
     - "symfony"
-img: "2020-01-24-how-to-install-xampp.jpg"  
+img: "introduction-to-symfony.jpg"  
 outputPath: "blog/symfony/introduction-to-symfony/"
 ---
 
