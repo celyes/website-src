@@ -12,7 +12,7 @@ outputPath: "blog/symfony/introduction-to-symfony/"
 #### What is symfony:
 
 Symfony is a set of open source PHP reusable components/libraries originally developed by [Fabien Potencier](https://twitter.com/fabpot). 
-in other words, it's a PHP MVC framework used to create website, APIs and Console applications of different sizes and for different purposes.
+in other words, it's a PHP MVC framework used to create websites, APIs and Console applications of different sizes and for different purposes.
 
 #### Checking requirements:
 
