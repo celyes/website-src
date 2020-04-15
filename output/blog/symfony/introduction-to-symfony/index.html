@@ -140,7 +140,7 @@ Ilyes Chouia
 <span class="pipe grey-text text-lighten-2">|</span>
 &nbsp;&nbsp; 
 <i class="tiny material-icons black-text">timer</i>
-4 min            <span class="right comments-counter">
+3 min            <span class="right comments-counter">
     <i class="tiny material-icons black-text">comment</i>
     &nbsp;<a href="#disqus_thread" class="black-text">Show comments</a>
 </span>              
@@ -153,42 +153,13 @@ Ilyes Chouia
 in other words, it's a PHP MVC framework used to create websites, APIs and Console applications of different sizes and for different purposes.</p>
 <h4 id="checking-requirements"><a href="#checking-requirements" class="heading-anchor">Checking requirements:</a></h4>
 <p>Symfony requires version 7.2.15 of PHP in addition to some extensions which are: Ctype, iconv, JSON, PCRE, Session, SimpleXML and Tokenizer.</p>
-<p>in most cases, these extensions are installed by default with PHP, but you should make sure that all the requirements are available by listing the installed extensions using the following command:</p>
-<pre><code class="language-bash">$ php -m | less </code></pre>
-<p>this will print a list of all installed PHP extensions on your machine as following:</p>
-<pre><code class="language-bash">[PHP Modules]
-bcmath
-calendar
-Core
-ctype
-curl
-date
-dom
-exif
-fileinfo
-filter
-:</code></pre>
-<p>use the down arrow to navigate through the list.</p>
-<p>after making sure all the requirements are available and met, proceed to the installation operation. as we mentioned above, there are two ways to install Symfony, either by using Composer which is the package manager for PHP, or by using Symfony CLI.</p>
-<h4 id="installing-symfony-using-composer"><a href="#installing-symfony-using-composer" class="heading-anchor">Installing Symfony using composer:</a></h4>
-<p>Composer is the package manager for PHP. it's the tool responsible for managing the packages and dependencies you use in your projects as well as providing useful features such as autoloading.</p>
-<p>let's open up a terminal window and type in the following command:</p>
-<pre><code class="language-bash">$ composer create-project symfony/website-skeleton my_first_project</code></pre>
-<p>after the installation is finished, you should be able to see a new folder named <code>my_first_project</code>.
-this folder contains all the files necessary for starting a new website which is cool, but how do we browse the actual website in a browser? well, after installing the project, go to <code>my_first_project</code> directory and start a new Symfony server by using this command:</p>
-<pre><code class="language-bash">$ cd my_first_project
-$ symfony server:start</code></pre>
-<p>seeing this message indicates that the server started and everything is working correctly:</p>
-<pre><code class="language-bash"> [OK] Web server listening on http://127.0.0.1:8000 (PHP CGI 7.3.11)</code></pre>
-<h4 id="installing-symfony-using-symfony-cli"><a href="#installing-symfony-using-symfony-cli" class="heading-anchor">Installing Symfony using Symfony CLI:</a></h4>
-<p>Symfony CLI is the recommended way to install a new Symfony project since it offers a bunch of useful features such as a built-in web server, security checking tool and project creation on the fly. it also allows us to check the requirement before starting a newSymfony project.</p>
-<p>We can install it by executing this command.</p>
-<p>installing the CLI is an easy task. all you have to do is to execute this command:</p>
-<pre><code class="language-bash">$  wget https://get.symfony.com/cli/installer -O - | bash </code></pre>
-<p>after we finish installing the CLI, let's check if the requirements are met on our machine:</p>
+<p>in most cases, these extensions are installed by default with PHP, but you should make sure that all the requirements are available by installing Symfony CLI :</p>
+<pre><code class="language-bash">$ wget https://get.symfony.com/cli/installer -O - | bash </code></pre>
+<p>after installation is finished, check the requirements by typing in this command:</p>
 <pre><code class="language-bash">$ symfony check:requirements</code></pre>
-<p>we should get this message:</p>
-<pre><code class="language-bash">Symfony Requirements Checker
+<p>you should get this message:</p>
+<pre><code class="language-bash">
+Symfony Requirements Checker
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 &gt; PHP is using the following php.ini file:
@@ -201,9 +172,22 @@ $ symfony server:start</code></pre>
  [OK]                                         
  Your system is ready to run Symfony projects 
 </code></pre>
-<p>this indicates that all is ok and ready to go! let's move to the next step, which is the isntallation.  execute this command:</p>
+<p>after we made sure all the requirements are available and met, it's time to proceed to the installation operation. </p>
+<p>as we mentioned above, there are two ways to install Symfony, either by using Composer which is the package manager for PHP, or by using Symfony CLI.</p>
+<h4 id="installing-symfony-using-composer"><a href="#installing-symfony-using-composer" class="heading-anchor">Installing Symfony using composer:</a></h4>
+<p>Composer is the package manager for PHP. it's the tool responsible for managing the packages and dependencies you use in your projects as well as providing useful features such as autoloading.</p>
+<p>let's open up a terminal window and type in the following command:</p>
+<pre><code class="language-bash">$ composer create-project symfony/website-skeleton my_first_project</code></pre>
+<p>after the installation is finished, you should be able to see a new folder named <code>my_first_project</code>.
+this folder contains all the files necessary for starting a new website which is cool, but how do we browse the actual website in a browser? well, after installing the project, go to <code>my_first_project</code> directory and start a new Symfony server by using this command:</p>
+<pre><code class="language-bash">$ cd my_first_project
+$ symfony server:start</code></pre>
+<p>seeing this message indicates that the server started and everything is working correctly:</p>
+<pre><code class="language-bash"> [OK] Web server listening on http://127.0.0.1:8000 (PHP CGI 7.3.11)</code></pre>
+<h4 id="installing-symfony-using-symfony-cli"><a href="#installing-symfony-using-symfony-cli" class="heading-anchor">Installing Symfony using Symfony CLI:</a></h4>
+<p>Symfony CLI is the recommended way to install a new Symfony project since it offers a bunch of useful features such as a built-in web server, security checking tool and project creation on the fly. it also allows us to check the requirement before starting a new Symfony project.</p>
 <pre><code class="language-bash">$ symfony new my_first_project --full</code></pre>
-<p>Executing the command with <code>--full</code> flag is required when building a website, but when you want to use Symfony for building an API or a console application, don't use this flag.</p>
+<p>Executing the command with <code>--full</code> flag is required when building a website, but don't use this flag ifn you are willing to build an API or a console application.</p>
 <p>after installing the project, go to <code>my_first_project</code> directory and start a new Symfony server by using this command:</p>
 <pre><code class="language-bash">$ cd my_first_project
 $ symfony server:start</code></pre>

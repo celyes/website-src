@@ -18,30 +18,35 @@ in other words, it's a PHP MVC framework used to create websites, APIs and Conso
 
 Symfony requires version 7.2.15 of PHP in addition to some extensions which are: Ctype, iconv, JSON, PCRE, Session, SimpleXML and Tokenizer.
 
-in most cases, these extensions are installed by default with PHP, but you should make sure that all the requirements are available by listing the installed extensions using the following command:
-
+in most cases, these extensions are installed by default with PHP, but you should make sure that all the requirements are available by installing Symfony CLI :
 ```bash
-$ php -m | less 
+$ wget https://get.symfony.com/cli/installer -O - | bash 
 ```
-this will print a list of all installed PHP extensions on your machine as following:
-
+after installation is finished, check the requirements by typing in this command:
 ```bash
-[PHP Modules]
-bcmath
-calendar
-Core
-ctype
-curl
-date
-dom
-exif
-fileinfo
-filter
-:
+$ symfony check:requirements
 ```
-use the down arrow to navigate through the list.
+you should get this message:
+```bash
 
-after making sure all the requirements are available and met, proceed to the installation operation. as we mentioned above, there are two ways to install Symfony, either by using Composer which is the package manager for PHP, or by using Symfony CLI.
+Symfony Requirements Checker
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+> PHP is using the following php.ini file:
+/etc/php/7.3/cli/php.ini
+
+> Checking Symfony requirements:
+
+.............................
+
+                                              
+ [OK]                                         
+ Your system is ready to run Symfony projects 
+                                              
+```
+after we made sure all the requirements are available and met, it's time to proceed to the installation operation. 
+
+as we mentioned above, there are two ways to install Symfony, either by using Composer which is the package manager for PHP, or by using Symfony CLI.
 
 #### Installing Symfony using composer:
 
@@ -68,43 +73,12 @@ seeing this message indicates that the server started and everything is working 
 
 #### Installing Symfony using Symfony CLI:
 
-Symfony CLI is the recommended way to install a new Symfony project since it offers a bunch of useful features such as a built-in web server, security checking tool and project creation on the fly. it also allows us to check the requirement before starting a newSymfony project.
-
-We can install it by executing this command.
-
-installing the CLI is an easy task. all you have to do is to execute this command:
-```bash
-$  wget https://get.symfony.com/cli/installer -O - | bash 
-```
-after we finish installing the CLI, let's check if the requirements are met on our machine:
-
-```bash
-$ symfony check:requirements
-``` 
-we should get this message:
-
-```bash
-Symfony Requirements Checker
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-> PHP is using the following php.ini file:
-/etc/php/7.3/cli/php.ini
-
-> Checking Symfony requirements:
-
-.............................
-
-                                              
- [OK]                                         
- Your system is ready to run Symfony projects 
-                                              
-```
-this indicates that all is ok and ready to go! let's move to the next step, which is the isntallation.  execute this command:
+Symfony CLI is the recommended way to install a new Symfony project since it offers a bunch of useful features such as a built-in web server, security checking tool and project creation on the fly. it also allows us to check the requirement before starting a new Symfony project.
 
 ```bash
 $ symfony new my_first_project --full
 ``` 
-Executing the command with `--full` flag is required when building a website, but when you want to use Symfony for building an API or a console application, don't use this flag.
+Executing the command with `--full` flag is required when building a website, but don't use this flag ifn you are willing to build an API or a console application.
 
 after installing the project, go to `my_first_project` directory and start a new Symfony server by using this command:
 
