@@ -9,18 +9,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- facebook open grpah -->
-    <meta property="og:url" content="https://celyes.now.sh/blog/php/introduction-to-symfony/" />
+    <meta property="og:url" content="https://celyes.now.sh/blog/symfony/creating-pages-in-symfony/" />
     <meta property="og:type" content="article" />
-    <meta property="og:title" content="Symfony 101: introduction and installation" />
-    <meta property="og:description" content="Symfony 101: introduction and installation" />
-    <meta property="og:image" content="https://celyes.now.sh/img/2020-01-24-how-to-install-xampp.jpg" />
+    <meta property="og:title" content="Symfony 101: creating pages" />
+    <meta property="og:description" content="Symfony 101: creating pages" />
+    <meta property="og:image" content="https://celyes.now.sh/img/creating-pages.webp" />
     <meta property="og:image:width" content="450" />
     <meta property="og:image:height" content="350" />
     
     <!-- links -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700&display=swap" />     
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap" rel="stylesheet">        
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/styles/xcode.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/styles/monokai.min.css" />
     <link rel="stylesheet" href="https://celyes.now.sh/assets/blog/css/main.css" />
     
     <!-- favicons -->
@@ -42,7 +42,7 @@
     <meta name="msapplication-TileImage" content="https://celyes.now.sh/assets/icons/ms-icon-144x144.png">
     <meta name="theme-color" content="#f5f5f5">
     <!-- title -->
-    <title>Symfony 101: introduction and installation</title>  
+    <title>Symfony 101: creating pages</title>  
     
 </head>    <body>
     
@@ -50,8 +50,7 @@
           
     <ul id="categories-dropdown-menu" class="dropdown-content">
 
-  <li><a href="https://celyes.now.sh/blog/php" class="black-text">php</a></li>
-  <li><a href="https://celyes.now.sh/blog/linux" class="black-text">linux</a></li>
+  <li><a href="https://celyes.now.sh/blog/symfony" class="black-text">symfony</a></li>
 </ul>
 <nav class="z-depth-0 parallax-navbar">
     <div class="container">
@@ -89,8 +88,7 @@
 	        <i class="material-icons">arrow_drop_down</i></a>
 	        <div class="collapsible-body">
 	          <ul>
-							  	<li><a href="https://celyes.now.sh/blog/php" class="black-text">php</a></li>
-							  	<li><a href="https://celyes.now.sh/blog/linux" class="black-text">linux</a></li>
+							  	<li><a href="https://celyes.now.sh/blog/symfony" class="black-text">symfony</a></li>
 								</ul>
 	        </div>
 	      </li>
@@ -115,22 +113,22 @@
     </div>
 </div>    
     <div class="parallax">
-        <img src="https://celyes.now.sh/img/2020-01-24-how-to-install-xampp.jpg" alt="Symfony 101: introduction and installation" />
+        <img src="https://celyes.now.sh/img/creating-pages.webp" alt="Symfony 101: creating pages" />
     </div>
     <div class="vertical-center">
-        <h1 class="white-text center headline-text">Symfony 101: introduction and installation</h1>
+        <h1 class="white-text center headline-text">Symfony 101: creating pages</h1>
     </div>
     <div class="tag-chips">
-                <div class="chip">php</div>
+                <div class="chip">symfony</div>
             </div>
 </div>
                 <div class="container container-tight">
           <div class="col-12">
             <br>
                         <i class="tiny material-icons black-text">date_range</i>
-<time datetime="2020-04-04">
+<time datetime="2020-04-23">
     
-            Sat, Apr 4
+            Thu, Apr 23
     
     </time>
 &nbsp;&nbsp;
@@ -142,7 +140,7 @@ Ilyes Chouia
 <span class="pipe grey-text text-lighten-2">|</span>
 &nbsp;&nbsp; 
 <i class="tiny material-icons black-text">timer</i>
-3 min            <span class="right comments-counter">
+1 min            <span class="right comments-counter">
     <i class="tiny material-icons black-text">comment</i>
     &nbsp;<a href="#disqus_thread" class="black-text">Show comments</a>
 </span>              
@@ -150,54 +148,7 @@ Ilyes Chouia
             <div class="divider"></div>
             
             
-            <h4 id="what-is-symfony"><a href="#what-is-symfony" class="heading-anchor">What is symfony?</a></h4>
-<p>in this article, we will talk about how to get starte with symfony...</p>
-<p>According to the official website, Symfony is a set of open source PHP reusable components/libraries originally developed by <a href="https://twitter.com/fabpot">Fabien Potencier</a>.
-in other words, it's a PHP MVC framework used to create website, APIs and Console applications of different sizes and for different purposes.</p>
-<h4 id="how-to-install-symfony"><a href="#how-to-install-symfony" class="heading-anchor">How to install Symfony?</a></h4>
-<p>Symfony requires PHP version 7.2.15 at least in addition to some extensions which are: Ctype, iconv, JSON, PCRE, Session, SimpleXML and Tokenizer.</p>
-<p>in most cases, these extensions are installed by default with PHP, but you should make sure that all requirements are available by listing all the extensions using the following command:</p>
-<pre><code class="language-bash">php -m </code></pre>
-<p>this will print a list of all installed PHP extensions on your machine.</p>
-<p>after making sure all the requirements are available and met, proceed to the installation operation. as we mentioned above, there are two ways to install Symfony, either by using Composer which is the package manager for PHP, or by using Symfony CLI.</p>
-<p>1 - using composer:</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-<pre><code class="language-php">namespace GuzzleHttp\Exception;
-
-use Psr\Http\Message\StreamInterface;
-
-/**
- * Exception thrown when a seek fails on a stream.
- */
-class SeekException extends \RuntimeException implements GuzzleException
-{
-    private $stream;
-
-    public function __construct(StreamInterface $stream, $pos = 0, $msg = '')
-    {
-        $this-&gt;stream = $stream;
-        $msg = $msg ?: 'Could not seek the stream to position ' . $pos;
-        parent::__construct($msg);
-    }
-
-    /**
-     * @return StreamInterface
-     */
-    public function getStream()
-    {
-        return $this-&gt;stream;
-    }
-}</code></pre>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-<script id="asciicast-303295" src="https://asciinema.org/a/303295.js" data-rows="25" async></script>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>                        <br>
+            <h4 id="to-be-filled"><a href="#to-be-filled" class="heading-anchor">To be filled</a></h4>                        <br>
 <button class="js-disqus-button btn btn-flat purple darken-4 white-text">Show comments</button>
 
 <div id="disqus_thread"></div>
@@ -216,8 +167,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
   <div class="container">
     <div class="row">
       <div class="col l6 s12">
-        <h5 class="black-text">Footer Content</h5>
-        <p class="black-text">You can use rows and columns here to organize your footer content.</p>
+        <h5 class="black-text">Celyes.dev</h5>
+        <p class="black-text"></p>
       </div>
       <div class="col l4 offset-l2 s12">
         <h5 class="black-text">Links</h5>
@@ -249,6 +200,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>        
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/highlight.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/languages/php.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/languages/bash.min.js"></script>
         <script src="https://celyes.now.sh/assets/blog/js/main.js"></script>
 		<script src="https://celyes.now.sh/assets/blog/js/comments.js"></script>
     </body>
