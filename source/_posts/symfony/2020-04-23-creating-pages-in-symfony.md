@@ -1,12 +1,12 @@
 ---
 id: 12
 layout: "_layouts/blog.twig"
-title: "Symfony 101: creating pages"
-relativeUrl: "Symfony 101: creating pages"
+title: "Symfony 101: Routes"
+relativeUrl: "Symfony 101: Routes"
 tags:
     - "symfony"
-img: "creating-pages.webp"  
-outputPath: "blog/symfony/creating-pages-in-symfony/"
+img: "routes.webp"  
+outputPath: "blog/symfony/routes/"
 ---
 
-#### To be filled
+#### What are routes?
