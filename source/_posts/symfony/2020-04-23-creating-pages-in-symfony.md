@@ -1,8 +1,8 @@
 ---
-id: 11
+id: 12
 layout: "_layouts/blog.twig"
-title: "Symfony 101: introduction and installation"
-relativeUrl: "Symfony 101: introduction and installation"
+title: "Symfony 101: creating pages"
+relativeUrl: "Symfony 101: creating pages"
 tags:
     - "symfony"
 img: "introduction-to-symfony.webp"  
