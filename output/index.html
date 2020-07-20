@@ -27,7 +27,7 @@
         <meta name="msapplication-TileImage" content="https://celyes.now.sh/assets/icons/ms-icon-144x144.png">
         <meta name="theme-color" content="#f5f5f5">
         <meta name="google-site-verification" content="A5-3dD_Q-F4b3imqlK4SI6QPSGZjHak5aB0qxXia_P4" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600&display=swap" rel="stylesheet">         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700&display=swap" rel="stylesheet">         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
         <link rel="stylesheet" href="https://celyes.now.sh/assets/css/main.css" />
         <title>celyes.dev</title> 
 
@@ -40,7 +40,7 @@
         <div class="d-flex justify-content-center">
             <h4 class="name">Ilyes Chouia</h4>
         </div>
-        <div class="d-flex justify-content-center mt-2">
+        <div class="d-flex justify-content-center mt-4">
             <h3 class="text-muted job">Web Developer / Translator</h3>
         </div>
         <br>
@@ -300,7 +300,7 @@
                 <a target="_blank" rel="noopener" href="https://github.com/celyes?tab=repositories" class="title">More works...</a>
                 <p class="description">See other works at GitHub</p>
                 <div class="col-xs-4 col-sm-2 language">
-                    <span class="circle "></span>
+                    <span class="circle github"></span>
                     <span class="type">GitHub</span>
                 </div>
             </div>
@@ -309,10 +309,12 @@
 </div>    </div>
     <br>
     <br>
-    <p class="my-5 text-center text-muted" id="date">&copy; </p>
+    <p class="my-5 text-center text-muted" id="date">&copy; <span></span></p>
         </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-
+        <script type="text/javascript">
+            document.querySelector("#date span").innerHTML = '&copy;' + (new Date()).getFullYear();
+        </script>
     </body>
 </html>
