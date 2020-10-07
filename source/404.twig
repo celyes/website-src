@@ -35,11 +35,15 @@
         <title>{{ title }}</title>  
         
     </head>
-    <body class="not-found-body">
-        <div class="not-found-message">
-            <img src="{{img_assets_url}}/pikachu.png" />
-            <h1 class="blue-grey-text text-darken-4">404</h1>
-            <a class="blue-grey-text text-darken-4" href="{{site_url}}">Take me back!</a>
+    <body>
+        <div class="not-found-body">
+            <div class="not-found-message">
+                <h1 class="blue-grey-text text-darken-4">404</h1>
+                <a class="blue-grey-text text-darken-4" href="{{site_url}}">Take me home!</a>
+                <br>
+                <br>
+                <img src="{{img_assets_url}}/pikachu.png" class="not-found-img"/>
+            </div>
         </div>
         <!-- scripts -->
         {% include '_snippets/scripts.twig' %}
