@@ -91,4 +91,5 @@ seeing this message indicates that the server running correctly:
 ```bash                                                    
  [OK] Web server listening on http://127.0.0.1:8000 (PHP CGI 7.3.11)
 ```
-we finished installing Symfony... now let's move to the next step 🤩!  
+we finished installing Symfony... now let's move on to the next step 🤩!  
+
